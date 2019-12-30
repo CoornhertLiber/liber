@@ -336,10 +336,10 @@ let data = {
     },
     "Duits":{
        "Allgemein":{
-          "P T A Oberstufe":"",
-          "P T Unterstufe":""
+          "PTA Oberstufe":"",
+          "PT Unterstufe":""
        },
-       "Deutschlesenfr LIC":{
+       "Deutschlesen fr LIC":{
           "Bchertipps Deutsch":""
        },
        "Grammatik Oberstufe B1 B2":{

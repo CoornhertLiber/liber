@@ -2,12 +2,14 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    top: 8vh;
+    position: absolute;
 }
 
 .testContainer {
     float: left;
     width: 31vw;
-    height: 97vh;
+    height: 90vh;
 
     margin-right: .5vw;
     margin-left: .5vw;
@@ -79,4 +81,36 @@ a.occupied {
 *::-moz-focus-outer {
     outline: none;
     border: none;
+}
+
+.todo {
+    background-color: #F2F3F5;
+    color: rgba(0,0,0,.87);
+    border-radius: .5em;
+    border: 2px solid rgba(34,36,38,.15);
+    height: 5vh;
+
+    float: left;
+    position: relative;
+    left: 1vw;
+    top: 1vh;
+
+    padding-left: .7vw;
+    padding-right: .7vw;
+
+    line-height: 2.2em;
+}
+
+.titleCard {
+    float: left;
+    font-size: 2.5em;
+}
+
+.titleContainer {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    top: .5vh;
+    left: 2vw;
 }

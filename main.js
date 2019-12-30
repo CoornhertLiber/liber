@@ -166,8 +166,8 @@ window.onload = function() {
         this.changeDomain(domain);
         break;
     }
-
-    document.body.appendChild(topContainer);
+    domDataContainer = document.getElementById("dataContainer");
+    domDataContainer.appendChild(topContainer);
 }
 
 function test() {
