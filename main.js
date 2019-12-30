@@ -55,7 +55,7 @@ function changeDomain(domain) {
     }
 
     var displayNames = [];
-    for (var i = 1; i < subjects.length; i++) {
+    for (var i = 0; i < subjects.length; i++) {
         if (data[domain][subjects[i]]["displayName"] == undefined) { displayNames.push(subjects[i]); }
         else { displayNames.push(data[domain][subjects[i]]["displayName"]); }
     }
@@ -66,10 +66,11 @@ function changeDomain(domain) {
     selected[0] = domain;
 
     var firstSubjectName;
-    var pass = false;
     for (prop in data[domain]) {
-        if (pass) { firstSubjectName = prop; break;}
-        else { pass = true; }
+        if (prop != "displayName") {
+            firstSubjectName = prop;
+            break;
+        }
     }
 
     changeSubject(domain, firstSubjectName);
@@ -107,7 +108,14 @@ function fillList(input, realNames, funcList) {
     var inputLength = input.length;
     for (var x = 0 ; x < funcList.childNodes.length; x++) {
         if (x < inputLength) {
-            funcList.childNodes[x].innerText = input[x];
+            if (input[x] != realNames[x]) {
+                funcList.childNodes[x].innerText = input[x];
+                funcList.childNodes[x].setAttribute("realName", realNames[x]);
+            }
+            else{
+                funcList.childNodes[x].innerText = input[x];
+                funcList.childNodes[x].setAttribute("realName", "");
+            }
             funcList.childNodes[x].classList = "occupied";
             if (funcList == moduleList) {
                 var s0 = selected[0].split(" ").join("");
@@ -175,6 +183,7 @@ window.onload = function() {
             }
             else {
                 domainList.childNodes[x].innerText = domains[x];
+                domainList.childNodes[x].setAttribute("realName", "");
             }
             domainList.childNodes[x].classList = "occupied";
         }
@@ -195,7 +204,7 @@ window.onload = function() {
 function test() {
     if (this.id == "domain") {
         var domain = "";
-        if (this.getAttribute("realName") == undefined) {
+        if (this.getAttribute("realName") == "") {
             domain = this.innerText;
         }
         else {
@@ -204,7 +213,14 @@ function test() {
         changeDomain(domain);
     }
     else if (this.id == "subject") {
-        changeSubject(selected[0], this.innerText);
+        var subject = "";
+        if (this.getAttribute("realName") == "") {
+            subject = this.innerText;
+        }
+        else {
+            subject = this.getAttribute("realName");
+        }
+        changeSubject(selected[0], subject);
     }
     else if (this.id == "module") {
         

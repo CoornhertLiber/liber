@@ -27,7 +27,7 @@ for x in onlyfiles:
             new = []
             for y in range(len(items)):
                 if z % 2 == 0:
-                    new.append( items[y].replace("/sites/liber/" + "Duits", "").replace("\n", "")[1:] )
+                    new.append( items[y].replace("/sites/liber/" + "LIC", "").replace("\n", "")[1:] )
                 else:
                     displayNames[new[-1].split("/")[-1]] = items[y].replace("\n", "")
                 z += 1
@@ -57,7 +57,11 @@ for domain in sorted(full.keys()):
     camel[domain] = {}
     for subject in x:
         y = full[domain][subject].keys()
-        pprint.pprint(displayNames)
+        #pprint.pprint(displayNames)
+        #print("\n\n---------------------------\n\n")
+        #pprint.pprint(full[domain])
+        if sorted(y) == ["liber"]:
+            continue
         camel[domain][subject] = {a: displayNames[a] for a in sorted(y)}
         for key in camel[domain][subject].keys():
             if key == camel[domain][subject][key]:

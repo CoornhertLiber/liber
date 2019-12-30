@@ -650,72 +650,72 @@ let data = {
          "van alles over tijdsaanduidingen":"",
          "verbazing uitdrukken":"",
          "verschillende manieren om een onderwerp aan te snijden":"",
-         "volgensofnaarzeggenvanbron":"",
-         "waariemandofietszichbevindt":"",
-         "watzegjealsjeietskrijgtofgeeft":"",
-         "zekerheidonzekerheiduitdrukken":"",
-         "zittenliggenstaanaktientoestand":""
+         "volgens of naar zeggen van bron":"",
+         "waar iemand of iets zich bevindt":"",
+         "wat zeg je als je iets krijgt of geeft":"",
+         "zekerheid onzekerheid uitdrukken":"",
+         "zitten liggen staan aktie n toestand":"zitten liggen staan aktie en toestand"
       }
    },
-   "Geschiedenis":{
-      "Expertopdrachten":{
-         "Klas2":"",
-         "Klas3":""
+   "Geschiedenis":{ 
+      "Expertopdrachten":{ 
+         "Klas2":"Klas 2",
+         "Klas3":"Klas 3"
       },
-      "Historische Contexten":{
-         "4 Koude Oorlog19451991":"",
-         "Duitsland18711945":"",
-         "Republiekder Zeven Verenigde Nederlanden15151648":"",
-         "Verlichtingsideenendedemocratischerevoluties16501848":""
+      "Historische Contexten":{ 
+         "4 Koude Oorlog19451991":"De Koude Oorlog (1945-1991)",
+         "Duitsland18711945":"Duitsland 1871-1945",
+         "Republiekder Zeven Verenigde Nederlanden15151648":"Republiek der Zeven Verenigde Nederlanden 1515-1648",
+         "Verlichtingsideenendedemocratischerevoluties16501848":"Verlichtingsideeën en de democratische revoluties 1650-1848"
       },
-      "Historische Vaardigheden":{
+      "Historische Vaardigheden":{ 
          "Hulpmiddelen":"",
          "Literatuurvergelijking":"",
          "Tijdvakkenopdrachten":""
       },
-      "Parlementaire Geschiedenis":{
-         "Parlementairegeschiedenis":"",
-         "Thema Europa":""
+      "Parlementaire Geschiedenis":{ 
+         "Parlementairegeschiedenis":"Parlementaire geschiedenis",
+         "Thema Europa":"Thema Europa"
       },
-      "Studiewijzers":{
-         "Klas1":"",
-         "Klas2":"",
-         "Klas3":"",
-         "Klas4":"",
-         "Klas5":"",
-         "Klas6":""
+      "Studiewijzers":{ 
+         "Klas1":"Klas 1",
+         "Klas2":"Klas 2",
+         "Klas3":"Klas 3",
+         "Klas4":"Klas 4",
+         "Klas5":"Klas 5",
+         "Klas6":"Klas 6"
       },
-      "Themas":{
-         "Amerikaklas2":"",
+      "Themas":{ 
+         "Amerikaklas2":"Amerika klas 2",
          "Chinaproject":"",
-         "De Spaanseontdekkingsreizen":"",
-         "Detijdvanontdekkersenhervormersdoorandereogen":"",
-         "Oral History":"",
-         "W O2opvijfcontinenten":""
+         "De Spaanseontdekkingsreizen":"De Spaanse ontdekkingsreizen",
+         "Detijdvanontdekkersenhervormersdoorandereogen":"De tijd van ontdekkers en hervormers door andere ogen",
+         "Oral History":"Oral History",
+         "W O2opvijfcontinenten":"WO2 op vijf continenten"
       },
-      "Tien Tijdvakkenbovenbouw":{
-         "Tijdvak10 Televisieen Computer":"",
-         "Tijdvak1 Jagersen Boeren":"",
-         "Tijdvak2 Griekenen Romeinen":"",
-         "Tijdvak3 Monnikenen Ridders":"",
-         "Tijdvak4 Stedenen Staten":"",
-         "Tijdvak5 Ontdekkersen Hervormers":"",
-         "Tijdvak6 Regentenen Vorsten":"",
-         "Tijdvak7 Pruikenen Revolutie":"",
-         "Tijdvak8 Burgersen Stoommachines":"",
-         "Tijdvak9 Wereldoorlogen B B":""
+      "Tien Tijdvakken bovenbouw":{ 
+         "Tijdvak10 Televisieen Computer":"Tijdvak 10: Televisie en Computer",
+         "Tijdvak1 Jagersen Boeren":"Tijdvak 1: Jagers en Boeren",
+         "Tijdvak2 Griekenen Romeinen":"Tijdvak 2: Grieken en Romeinen",
+         "Tijdvak3 Monnikenen Ridders":"Tijdvak 3: Monniken en Ridders",
+         "Tijdvak4 Stedenen Staten":"Tijdvak 4: Steden en Staten",
+         "Tijdvak5 Ontdekkersen Hervormers":"Tijdvak 5: Ontdekkers en Hervormers",
+         "Tijdvak6 Regentenen Vorsten":"Tijdvak 6: Regenten en Vorsten",
+         "Tijdvak7 Pruikenen Revolutie":"Tijdvak 7: Pruiken en Revolutie",
+         "Tijdvak8 Burgersen Stoommachines":"Tijdvak 8: Burgers en Stoommachines",
+         "Tijdvak9 Wereldoorlogen B B":"Tijdvak 9: Wereldoorlogen"
       },
-      "Tien Tijdvakkenonderbouw":{
-         "Tijdvak10 Televisie Computer":"",
-         "Tijdvak1 Jagers Boeren":"",
-         "Tijdvak2 Grieken Romeinen":"",
-         "Tijdvak3 Monniken Ridders":"",
-         "Tijdvak4 Steden Staten":"",
-         "Tijdvak5 Ontdekkers Hervormers":"",
-         "Tijdvak6 Regenten Vorsten":"",
-         "Tijdvak7 Pruiken Revoluties":"",
-         "Tijdvak8 Burgersamp Stoommachines":"",
-         "Tijdvak9 Wereldoorlogen O B":""
+      "Tien Tijdvakken onderbouw":{ 
+         "Tijdvak10 Televisie Computer":"Tijdvak 10: Televisie & Computer",
+         "Tijdvak1 Jagers Boeren":"Tijdvak 1: Jagers & Boeren",
+         "Tijdvak2 Grieken Romeinen":"Tijdvak 2: Grieken & Romeinen",
+         "Tijdvak3 Monniken Ridders":"Tijdvak 3: Monniken & Ridders",
+         "Tijdvak4 Steden Staten":"Tijdvak 4: Steden & Staten",
+         "Tijdvak5 Ontdekkers Hervormers":"Tijdvak 5: Ontdekkers & Hervormers",
+         "Tijdvak6 Regenten Vorsten":"Tijdvak 6: Regenten & Vorsten",
+         "Tijdvak7 Pruiken Revoluties":"Tijdvak 7: Pruiken & Revoluties",
+         "Tijdvak8 Burgersamp Stoommachines":"Tijdvak 8: Burgers & Stoommachines",
+         "Tijdvak9 Wereldoorlogen O B":"Tijdvak 9: Wereldoorlogen"
       }
    },
    "Grieks":{
@@ -731,33 +731,34 @@ let data = {
          "Toneel":""
       },
       "Grammatica Test":{
-         "Module1015 Voornaamwoord":"",
-         "Module12 Aspect":"",
-         "Module13 Realisenirrealis":"",
-         "Module16 Aspectrealisenirrealis":"",
-         "Module17 Indicativus":"",
-         "Module18 Coniunctivus":"",
-         "Module19 Optativus":"",
-         "Module1 Inleiding":"",
-         "Module20 Imperativus":"",
-         "Module21 Participium":"",
-         "Module22 Infinitivus":"",
-         "Module23 Actiefmediumenpassief":"",
-         "Module2426onregelmatigpraesens":"",
-         "Module2728onregelmatigeaoristus":"",
-         "Module29 Onregelmatigperfectum":"",
-         "Module2 Lidwoord":"",
-         "Module30 Onregelmatigfuturum":"",
-         "Module3 Zelfstandignaamwoord":"",
-         "Module4 Bijvoeglijknaamwoord":"",
-         "Module5trappenvanvergelijking":"",
-         "Module6 Telwoord":"",
-         "Module7 Congruentie":"",
-         "Module8 Naamvalsfuncties":"",
-         "Module9 Bijwoord":"",
+         "displayName": "Grammatica",
+         "Module 1015 Voornaamwoord":"Module 10 Voornaamwoorden",
+         "Module 12 Aspect":"",
+         "Module 13 Realis en irrealis":"",
+         "Module 16 Aspect realis en irrealis":"",
+         "Module 17 Indicativus":"",
+         "Module 18 Coniunctivus":"",
+         "Module 19 Optativus":"",
+         "Module 1 Inleiding":"",
+         "Module 20 Imperativus":"",
+         "Module 21 Participium":"",
+         "Module 22 Infinitivus":"",
+         "Module 23 Actief medium en passief":"",
+         "Module 24 26onregelmatigpraesens":"",
+         "Module 27 28onregelmatige  aoristus":"",
+         "Module 29 Onregelmatig perfectum":"",
+         "Module 2 Lidwoord":"",
+         "Module 30 Onregelmatigfuturum":"",
+         "Module 3 Zelfstandignaamwoord":"",
+         "Module 4 Bijvoeglijknaamwoord":"",
+         "Module 5 trappen van vergelijking":"",
+         "Module 6 Telwoord":"",
+         "Module 7 Congruentie":"",
+         "Module 8 Naamvalsfuncties":"",
+         "Module 9 Bijwoord":"",
          "Overzicht":""
       },
-      "Leerdoelenleerlijn":{
+      "Leerdoelen leerlijn":{
          "3 Bovenbouw":"",
          "Middenbouw":"",
          "Onderbouw":""
@@ -779,7 +780,7 @@ let data = {
          "Kosmos1":"",
          "Kosmos2":"",
          "Lucianus":"",
-         "Paleisopde Dam":"",
+         "Paleis op de Dam":"",
          "Plato":"",
          "Plusteksten":"",
          "Pythagoras":"",
@@ -795,103 +796,110 @@ let data = {
          "Woordenlijsten":""
       }
    },
-   "LIC":{
-      "0 Studiewijzers":{
-         "Studiewijzer Klas5 P2":""
+   "LIC":{ 
+      "0 Studiewijzers":{ 
+         "Studiewijzer Klas5 P2":"Studiewijzers P2"
       },
-      "16 Keuzelessenklas6":{
-         "Handigedocumenten":""
+      "16 Keuzelessenklas6":{ 
+         "Handigedocumenten":"Werkbladen"
       },
-      "17 Tipsvoordeboekenlijst":{
-         "Tipsvoordeboekenlijst":""
+      "17 Tipsvoordeboekenlijst":{ 
+         "Tipsvoordeboekenlijst":"Tips voor de boekenlijst"
       },
-      "19 Dichtbundels":{
-         "Met Open Ogen":"",
-         "Parkenen Woestijnen":""
+      "19 Dichtbundels":{ 
+         "Met Open Ogen":"Open Ogen",
+         "Parkenen Woestijnen":"Parken en Woestijnen"
       },
-      "Findesicle":{
-         "Literatuurrond1900":""
+      "Findesicle":{ 
+         "displayName": "8 Fin de siecle",
+         "Literatuurrond1900":"Literatuur rond 1900"
       },
-      "Handigesites":{
-         "Literaireprijzen":"",
+      "Handige sites":{ 
+         "displayName": "15 Handige sites",
+         "Literaireprijzen":"Literaire prijzen",
          "Literatuursites":""
       },
-      "Hetleesdossier":{
-         "Hetleesdossier":""
+      "Het leesdossier":{ 
+         "displayName": "14 Het mondeling",
+         "Hetleesdossier":"Het mondeling"
       },
-      "Hetlezenvanpozie":{
-         "Aspectenvanpozie":""
+      "Het lezen van pozie":{ 
+         "displayName": "2 Het lezen van poëzie",
+         "Aspectenvanpozie":"Aspecten van poëzie"
       },
-      "Hetlezenvanproza":{
+      "Het lezen van proza":{ 
+         "displayName": "1 Het lezen van proza",
          "Begrippen":"",
-         "D W D D Opdracht":"",
-         "Deleesniveaus":"",
-         "Deliterairerecensie":"",
+         "D W D D Opdracht":"DWDD-Opdracht",
+         "Deleesniveaus":"De leesniveaus",
+         "Deliterairerecensie":"De literaire recensie",
          "Genres":"",
          "Verhaalelementen":""
       },
-      "Keuzemodulesklas5":{
-         "Beestenboel":"",
-         "Boem Paukeslag":"",
-         "Lugubere Literatuur":"",
-         "Mannenovervrouwenindemiddeleeuwen":"",
-         "Muziekalsinspiratiebronvoorliteratuur":""
+      "Keuzemodules klas 5":{ 
+         "displayName": "12 Keuzemodules - klas 5",
+         "Beestenboel":"Beestenboel (vanaf periode 4!)",
+         "Boem Paukeslag":"Boem Paukeslag!",
+         "Lugubere Literatuur":"Lugubere Literatuur",
+         "Mannenovervrouwenindemiddeleeuwen":"Mannen over vrouwen in de middeleeuwen",
+         "Muziekalsinspiratiebronvoorliteratuur":"Muziek als inspiratiebron voor literatuur"
       },
-      "Keuzemodulesklas6":{
-         "Atthemovies":"",
-         "Beestenboel":"",
-         "Dubbelgangersinfictie":"",
-         "Ikneemjemee":"",
-         "Volkspozieenvolksmuziek":""
+      "Keuzemodules klas 6":{ 
+         "displayName": "13 Keuzemodules - klas 6",
+         "Atthemovies":"At the movies",
+         "Beestenboel":"Beestenboel (vanaf periode 4!)",
+         "Dubbelgangersinfictie":"Dubbelgangers in fictie",
+         "Ikneemjemee":"Ik neem je mee...",
+         "Volkspozieenvolksmuziek":"Bernstein at 100"
       },
-      "Keuzemodulesklas620192020":{
-         "Archief Boem Paukeslag":""
+      "Keuzemodulesklas620192020":{ 
+         "Archief Boem Paukeslag":"Archief Boem Paukeslag"
       },
-      "Middeleeuwen":{
-         "Delegende":"",
-         "Don Quixote":"",
-         "Genresvandeadel":"",
-         "Hetchansondegeste":"",
-         "Inleiding":"",
-         "Marikenvan Nieumeghen":"",
-         "Synoptischetabel":"",
-         "Toneelinde Middeleeuwen":"",
-         "Vandenvos Reynaerde":""
+      "Middeleeuwen":{ 
+         "Delegende":"2 De legende",
+         "Don Quixote":"8 Don Quixote",
+         "Genresvandeadel":"4 Genres van de adel",
+         "Hetchansondegeste":"3 Het chanson de geste",
+         "Inleiding":"1 Inleiding",
+         "Marikenvan Nieumeghen":"7 Mariken van Nieumeghen",
+         "Synoptischetabel":"9 Synoptische tabel",
+         "Toneelinde Middeleeuwen":"6 Toneel in de Middeleeuwen",
+         "Vandenvos Reynaerde":"5 Van den vos Reynaerde"
       },
-      "Moderne Literatuur19141940":{
-         "Moderne Literatuur":""
+      "Moderne Literatuur19141940":{ 
+         "Moderne Literatuur":"Moderne Literatuur"
       },
-      "Moderne Literatuur19401970":{
-         "Hetexperimentindepozie":"",
-         "Literatuurtussen19401970":""
+      "Moderne Literatuur19401970":{ 
+         "Hetexperimentindepozie":"Het experiment in de poëzie",
+         "Literatuurtussen19401970":"Literatuur tussen 1940-1970"
       },
-      "Moderne Literatuurna1970":{
-         "Het Postmodernisme":""
+      "Moderne Literatuurna1970":{ 
+         "Het Postmodernisme":"Het Postmodernisme"
       },
-      "Realismeen Naturalisme":{
-         "De Tachtigers":"",
-         "Naturalisme":"",
-         "Realisme":""
+      "Realismeen Naturalisme":{ 
+         "De Tachtigers":"3 De Tachtigers",
+         "Naturalisme":"2 Naturalisme",
+         "Realisme":"1 Realisme"
       },
-      "Renaissance":{
-         "De Goddelijke Komedie":"",
-         "Inleidinginde Renaissance":"",
-         "Sonnettenuitde Renaissance":"",
-         "Toneeluitde Renaissance":""
+      "Renaissance":{ 
+         "De Goddelijke Komedie":"2 De Goddelijke Komedie",
+         "Inleidinginde Renaissance":"1 Inleiding in de Renaissance",
+         "Sonnettenuitde Renaissance":"3 Sonnetten uit de Renaissance",
+         "Toneeluitde Renaissance":"4 Toneel uit de Renaissance"
       },
-      "Romantiek":{
-         "Dedoorbraakvanhetgevoel":"",
-         "Dezwarte Romantiek":"",
-         "Eenhalveeeuw Romantiek":"",
-         "Max Havelaar":"",
-         "Romantischeironie":"",
-         "Romantischepozie":""
+      "Romantiek":{ 
+         "Dedoorbraakvanhetgevoel":"1 De doorbraak van het gevoel",
+         "Dezwarte Romantiek":"3 De zwarte Romantiek",
+         "Eenhalveeeuw Romantiek":"2 Een halve eeuw Romantiek",
+         "Max Havelaar":"4 Max Havelaar",
+         "Romantischeironie":"5 Romantische ironie",
+         "Romantischepozie":"6 Romantische poëzie"
       },
-      "Verlichting":{
-         "De Verlichting":"",
-         "Debriefromanende Libertijnen":"",
-         "Defilosofischevertelling":"",
-         "Fabels":""
+      "Verlichting":{ 
+         "De Verlichting":"1 De Verlichting",
+         "Debriefromanende Libertijnen":"4 De briefroman en de Libertijnen",
+         "Defilosofischevertelling":"3 De filosofische vertelling",
+         "Fabels":"2 Fabels"
       }
    },
    "Latijn":{
