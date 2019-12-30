@@ -19,59 +19,59 @@ let data = {
           "Games en andere leuk materiaal":"",
           "Google Earth":""
        },
-       "Handigelinks":{
+       "Handige links":{
           "Hulp bij aardrijkskunde":""
        },
-       "Klas1":{
-          "Periode1":"",
-          "Periode2":"",
+       "Klas 1":{
+          "Periode 1":"",
+          "Periode 2":"",
           "Vaardigheden":""
        },
-       "Klas2":{
+       "Klas 2":{
           "De Stad":"",
           "Europa":"",
           "Milieu":"",
           "Onderzoek":"",
-          "Periode3":""
+          "Periode 3":""
        },
-       "Klas3":{
+       "Klas 3":{
           "Conflicten":"",
           "Onderzoek":"",
-          "Voorlichtingbovenbouw":"",
+          "Voorlichting bovenbouw":"",
           "Zuid Oost Azi":""
        },
-       "Klas4":{
+       "Klas 4":{
           "Globalisering":""
        },
-       "Klas5":{
-          "Periode2 Zuid Amerika":""
+       "Klas 5":{
+          "Periode 2 Zuid Amerika":""
        },
-       "Klas6":{
-          "Periode2systeemaarde":""
+       "Klas 6":{
+          "Periode 2 systeem aarde":""
        },
        "Leefomgeving Nederland":{
-          "Dreigingvanwater":"",
+          "Dreiging van water":"",
           "Leerdoelen H2 Leefomgeving":"",
           "Middelgrotestedenproblematiek":"",
-          "Stadenplatteland":"",
+          "Stad en platteland":"",
           "Veenlandschap":"",
-          "Zandenrivierkleilandschap":""
+          "Zand en rivierklei landschap":""
        },
        "Lerenvooraardrijkskunde":{
           "Onderbouw":""
        },
        "Studiewijzers":{
-          "Klas2":""
+          "Klas 2":""
        },
        "Vaardigheden":{
           "Basisvaardigheden":"",
-          "Dimensiesenschaalniveaus":"",
+          "Dimensies en schaalniveaus":"",
           "Kaartgebruik":"",
           "Lerenleren":"",
           "Meningvorming":"",
           "Onderzoekdoen":"",
           "Presenteren":"",
-          "Rekenenmetaardrijkskunde":""
+          "Rekenen met aardrijkskunde":""
        },
        "Vervolgopleidingen":{
           "Beroepen":"",
