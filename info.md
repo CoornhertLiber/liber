@@ -9,9 +9,12 @@ De beste manier om RetroLiber te gebruiken is om tegel naar de site toe te voege
 Als je BetterSharepoint gebruikt is er helaas op het moment nog geen optie om je eigen tegels toe te voegen, maar er wordt aan gewerkt om die functionaliteit toe te voegen
 
 ## Huidige tekortkomingen van RetroLiber
-Op het moment hebben veel links nog geen spaties. Dit is vanwege waarop de data geïmporteerd is. Helaas moeten de spaties handmatig geplaatst worden, en dat process kost erg veel tijd. Ik probeer eraan te werken wanneer er tijd is.
+<strike>Op het moment hebben veel links nog geen spaties. Dit is vanwege waarop de data geïmporteerd is. Helaas moeten de spaties handmatig geplaatst worden, en dat process kost erg veel tijd. Ik probeer eraan te werken wanneer er tijd is.
 
-Verder bevatten de links geen speciale karakters (ï, ë, ö, etc). Op het moment is er nog geen oplossing voor dit probleem, maar ook hier wordt aan gewerkt.
+Verder bevatten de links geen speciale karakters (ï, ë, ö, etc). Op het moment is er nog geen oplossing voor dit probleem, maar ook hier wordt aan gewerkt.</strike>
+
+Update:
+Hopelijk zijn nu beide van deze problemen verholpen
 
 ## Technische Details
 > TODO
