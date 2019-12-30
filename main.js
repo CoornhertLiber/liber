@@ -56,7 +56,8 @@ function changeDomain(domain) {
 
     var displayNames = [];
     for (var i = 1; i < subjects.length; i++) {
-        displayNames.push(subjects[i]);
+        if (data[domain][subjects[i]]["displayName"] == undefined) { displayNames.push(subjects[i]); }
+        else { displayNames.push(data[domain][subjects[i]]["displayName"]); }
     }
     
     fillList(displayNames, subjectList);
@@ -86,6 +87,9 @@ function changeSubject(domain, subject) {
     var displayNames = [];
     for (var i = 0; i < modules.length; i++) {
         item = modules[i];
+        if (item == "displayName") {
+            continue;
+        }
         if (data[domain][subject][item] != "") {
             displayNames.push(data[domain][subject][item]);
         }

@@ -1,4 +1,4 @@
-let data = {
+let data1 = {
     "Aardrijkskunde":{
        "displayName": "AKTest",
        "Aarde":{
@@ -51,7 +51,7 @@ let data = {
     }
 }
 
-let data1 = {
+let data = {
    "Aardrijkskunde":{
       "Aarde":{
          "Aardbevingen":"",
