@@ -1,0 +1,82 @@
+.topContainer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.testContainer {
+    float: left;
+    width: 31vw;
+    height: 97vh;
+
+    margin-right: .5vw;
+    margin-left: .5vw;
+    background-color: white;
+    border-radius: 1em;
+
+    box-shadow: 0 4px 8px 0 rgba(13, 13, 14, 0.15);
+    border: 2px solid rgba(13, 13, 14, 0.15);
+
+    overflow-y: auto;
+}
+
+.testList {
+    list-style-type: none;
+}
+
+.empty {
+    display: none;
+}
+
+.occupied {
+    display: block;
+    background-color: #cacbcd;
+    border: none;
+    color: rgba(0,0,0,.8);
+    
+    border-radius: .5em;
+    margin-top: 1vh;
+
+    height: 4.6vh;
+    width: 29vw;
+    left: -2vw;
+    position: relative;
+
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+
+    outline-style: none;
+}
+
+a.occupied {
+    line-height: em;
+}
+
+.active {
+    background-color: #2185d0 !important;
+    color: white;
+}
+
+.seperator {
+    float: left;
+    width: .5vw;
+    height: 98vh;
+    background-color: gray;
+    border-radius: 1em;
+}
+
+*::-moz-focus-inner {
+    outline: none;
+    border:none;
+}
+
+*::-moz-focus-outer {
+    outline: none;
+    border: none;
+}
