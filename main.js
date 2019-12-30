@@ -53,15 +53,21 @@ function changeDomain(domain) {
     for (item in data[domain]) {
         subjects.push(item);
     }
+
+    var displayNames = [];
+    for (var i = 1; i < subjects.length; i++) {
+        displayNames.push(subjects[i]);
+    }
     
-    fillList(subjects, subjectList);
+    fillList(displayNames, subjectList);
 
     selected[0] = domain;
 
     var firstSubjectName;
+    var pass = false;
     for (prop in data[domain]) {
-        firstSubjectName = prop;
-        break;
+        if (pass) { firstSubjectName = prop; break;}
+        else { pass = true; }
     }
 
     changeSubject(domain, firstSubjectName);
@@ -77,14 +83,19 @@ function changeSubject(domain, subject) {
     selected[0] = domain;
     selected[1] = subject;
 
-    var firstModuleName;
-    for (prop in data[domain][subject]) {
-        firstModuleName = prop;
-        break;
+    var displayNames = [];
+    for (var i = 0; i < modules.length; i++) {
+        item = modules[i];
+        if (data[domain][subject][item] != "") {
+            displayNames.push(data[domain][subject][item]);
+        }
+        else {
+            displayNames.push(item);
+        }
     }
+    print(displayNames);
 
-    fillList(modules, moduleList);
-
+    fillList(displayNames, moduleList);
 
 }
 
@@ -114,11 +125,12 @@ function highlightSelected() {
     for (var i = 0; i < 2; i++) {
         for (var x = 0; x < dataContainerItems[i].childNodes.length; x++) {
             if (dataContainerItems[i].childNodes[x].classList != "empty") {
-                if (dataContainerItems[i].childNodes[x].innerText == selected[i]) {
-                    dataContainerItems[i].childNodes[x].classList += " active";
+                var toCheck = dataContainerItems[i].childNodes[x];
+                if (toCheck.innerText == selected[i] || toCheck.getAttribute("realName") == selected[i]) {
+                    toCheck.classList += " active";
                 }
                 else {
-                    dataContainerItems[i].childNodes[x].classList = "occupied";
+                    toCheck.classList = "occupied";
                 }
             }
         }
@@ -153,7 +165,13 @@ window.onload = function() {
     var domainLength = domains.length;
     for (var x = 0 ; x < domainList.childNodes.length; x++) {
         if (x < domainLength) {
-            domainList.childNodes[x].innerText = domains[x];
+            if (data[domains[x]]["displayName"] != undefined) {
+                domainList.childNodes[x].innerText = data[domains[x]]["displayName"];
+                domainList.childNodes[x].setAttribute("realName", domains[x]);
+            }
+            else {
+                domainList.childNodes[x].innerText = domains[x];
+            }
             domainList.childNodes[x].classList = "occupied";
         }
         else {
@@ -172,7 +190,14 @@ window.onload = function() {
 
 function test() {
     if (this.id == "domain") {
-        changeDomain(this.innerText);
+        var domain = "";
+        if (this.getAttribute("realName") == undefined) {
+            domain = this.innerText;
+        }
+        else {
+            domain = this.getAttribute("realName");
+        }
+        changeDomain(domain);
     }
     else if (this.id == "subject") {
         changeSubject(selected[0], this.innerText);
