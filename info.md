@@ -16,7 +16,6 @@ Verder bevatten de links geen speciale karakters (ï, ë, ö, etc). Op het momen
 Ten slotte is sommige data niet correct geexporteerd, en daardoor missen er nu een paar onderdelen. Dit is een lijst van bekende gaten:
 
 1. Studiewijzers van Duits
-2. B1 en B2 taaleigenaardigheden van Frans
 
 ## Technische Details
 > TODO

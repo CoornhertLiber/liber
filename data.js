@@ -335,6 +335,10 @@ let data = {
       }
    },
    "Duits":{ 
+         "0 Studienplan": {
+            "Oberstufe46Klasse": "Oberstufe (4.-6 Klasse)",
+            "Studienplan6Klasse": "Unterstufe (2. und 3. Klasse)",
+         },
          "Allgemein":{ 
             "P T A Oberstufe":"PTA Oberstufe",
             "P T Unterstufe":"PT Unterstufe"
@@ -912,29 +916,29 @@ let data = {
       },  
    },
    "Latijn":{
-      "0 Leerdoelenleerlijnenstudiewijzers":{
+      "0 Leerdoelen leerlijnen studiewijzers":{
          "3 Bovenbouw":"",
          "Middenbouw":"",
          "Onderbouw":""
       },
       "2 Grammatica":{
-         "Module10 Indicativus":"",
-         "Module11 Coniunctivus":"",
-         "Module12 Imperativus":"",
-         "Module13 Participium":"",
-         "Module14 Infinitivus":"",
-         "Module15 Onregelmatigewerkwoorden":"",
-         "Module16 Gerundiumengerundivum":"",
-         "Module17 Actiefenpassief":"",
-         "Module1 Inleiding":"",
-         "Module2 Zelfstandignaamwoord":"",
-         "Module3 Bijvoeglijknaamwoord":"",
-         "Module4 Trappenvanvergelijking":"",
-         "Module5 Telwoord":"",
-         "Module6 Voornaamwoord":"",
-         "Module7 Bijwoord":"",
-         "Module8 Congruentie":"",
-         "Module9 Naamvalsfuncties":""
+         "Module 1 Inleiding":"",
+         "Module 2 Zelfstandig naamwoord":"",
+         "Module 3 Bijvoeglijk naamwoord":"",
+         "Module 4 Trappen van vergelijking":"",
+         "Module 5 Telwoord":"",
+         "Module 6 Voornaamwoord":"",
+         "Module 7 Bijwoord":"",
+         "Module 8 Congruentie":"",
+         "Module 9 Naamvalsfuncties":"",
+         "Module 10 Indicativus":"",
+         "Module 11 Coniunctivus":"",
+         "Module 12 Imperativus":"",
+         "Module 13 Participium":"",
+         "Module 14 Infinitivus":"",
+         "Module 15 Onregelmatige werkwoorden":"",
+         "Module 16 Gerundium en gerundivum":"",
+         "Module 17 Actief en passief":"",
       },
       "Cultuur":{
          "Dagelijksleven":"",
@@ -954,18 +958,18 @@ let data = {
          "Vergilius":""
       },
       "Vertaalvaardigheid":{
-         "Gebruikwoordenboek":"",
+         "Gebruik woordenboek":"",
          "Vertaalstrategie":""
       },
       "Woorden":{
          "Alfabet":"",
-         "Dagelijksleven":"",
+         "Dagelijks leven":"",
          "Woordenlijsten":""
       }
    },
    "NLT":{
       "Levensloop":{
-         "Levensloopvansterren":""
+         "Levensloop van sterren":""
       }
    },
    "Natuurkunde":{
@@ -978,7 +982,7 @@ let data = {
       "B1 Trillingenen Golven":{
          "B1 Trillingenengolven":""
       },
-      "B2 Medischebeeldvorming":{
+      "B2 Medische beeldvorming":{
          "B2 Medische Beeldvorming":""
       },
       "C1 Dynamica":{
@@ -1002,7 +1006,7 @@ let data = {
       "E2 Astrofysica":{
          "E2 Astrofysica":""
       },
-      "E3 Elementairedeeltjes":{
+      "E3 Elementaire deeltjes":{
          "E3 Elementairedeeltjes":""
       },
       "Examentraining":{
@@ -1018,15 +1022,15 @@ let data = {
       "F2 Relativiteit":{
          "F2 Relativiteit":""
       },
-      "H3 Numeriekemodellen":{
+      "H3 Numerieke modellen":{
          "H3 Numeriekemodellen":""
       },
-      "H Natuurwettenenmodellen":{
+      "H Natuurwetten en modellen":{
          "H Natuurwettenenmodellen":""
       },
       "Onderbouw":{
          "Beweging":"",
-         "Digitalesystemen Systeembord":"",
+         "Digitale systemen Systeembord":"",
          "Elektriciteit":"",
          "Energie":"",
          "Fermischatten":"",
@@ -1034,34 +1038,66 @@ let data = {
          "Geluiden Druk":"",
          "Krachten":"",
          "Licht":"",
-         "Natuurkundigevaardigheden":"",
+         "Natuurkundige vaardigheden":"",
          "Stoffen":"",
          "Warmte":""
       }
    },
-   "Nederlands OB":{
-      "sites":{
-         "liber":""
+   "Nederlands OB":{ 
+      "Nederlands BB":{ 
+         "51 Leesvaardigheid":"5.1 Schrijfvaardigheid",
+         "51 Schrijfvaardigheid":"5.1 Leesvaardigheid",
+         "6 Leesvaardigheid":"6. Leesvaardigheid",
+         "6 Schrijfvaardigheid":"6. Schrijfvaardigheid",
+         "Troublespeech":"5.1 Spreekvaardigheid"
+      },
+      "Nederlands MB":{ 
+         "31 Deelopdrachten Leesvaardigheid":"3.1 Deelopdrachten Leesvaardigheid",
+         "31 Verhaal":"3.1 Verhaal",
+         "32 Monoloog1erondedebat":"3.2 Monoloog / 1e ronde debat",
+         "32 Stijl":"3.2 Stijl",
+         "33 Interview":"3.3 Interview",
+         "4 Formuleren E1en E3":"4. Formuleren (E1 en E3)",
+         "4 Spreekvaardigheid":"4. Spreekvaardigheid",
+         "Poezieklas3":"Poezie klas 3"
+      },
+      "Nederlands OB":{ 
+         "13 Periode3":"1.3 Periode 3",
+         "21 Gelijkheid":"2.1 Gelijkheid",
+         "21 Robotica":"1.2 Robotica",
+         "22 Fantasy":"2.2 Fantasy",
+         "23 Europa":"2.2 Europa",
+         "24 Digitale Media":"2.4 Digitale Media",
+         "O Bfictie":"1.1 Mijn leesleven",
+         "O Bgrammatica":"OB grammatica",
+         "O Bintroductie":"0 Introductie Nederlands",
+         "O Blezen":"OB lezen",
+         "O Bschrijven":"OB schrijven",
+         "O Bsprekenluisteren":"OB spreken luisteren",
+         "O Bstijlenspelling":"OB stijl en spelling",
+         "O Btaalvariatie":"OB taalvariatie",
+         "Planningklas1periode2":"Planning klas 1 periode 2",
+         "Taallesklas1":"Taalles klas 1"
       }
    },
    "Onderzoekenen Ontwerpen":{
-      "Onderzoekenenontwerpenklas1":{
-         "Kwartaal2":"",
-         "Kwartaal3":"",
-         "Kwartaal4":"",
-         "kwartaal1":""
+      "Onderzoeken en ontwerpen klas 1":{
+         "Kwartaal 2":"",
+         "Kwartaal 3":"",
+         "Kwartaal 4":"",
+         "kwartaal 1":""
       },
-      "Onderzoekenenontwerpenklas2":{
+      "Onderzoeken en ontwerpen klas 2":{
          "Onderzoeken":"",
          "Ontwerpen":""
       }
    },
    "Scheikunde":{
       "0 Studiewijzers":{
-         "Klas3":"",
-         "Klas4":"",
-         "Klas5":"",
-         "Klas6":""
+         "Klas 3":"",
+         "Klas 4":"",
+         "Klas 5":"",
+         "Klas 6":""
       },
       "3e Klas":{
          "Atomen Moleculen":"",
@@ -1072,7 +1108,7 @@ let data = {
          "Zuivere Stoffen Mengsels":""
       },
       "Biochemie":{
-         "D N A":"",
+         "DNA":"",
          "Eiwitten":"",
          "Koolhydraten":"",
          "Vetten":""
@@ -1120,12 +1156,12 @@ let data = {
       },
       "Zuren Basen":{
          "Uitleg Zuren Basen":"",
-         "p H Berekeningen":""
+         "pH Berekeningen":""
       }
    },
    "Technisch Ontwerpen":{
       "Gereedschap":{
-         "3 D Printer":"",
+         "3D Printer":"",
          "Houtbewerking":"",
          "Inktscape":"",
          "Lasercutter":""
@@ -1134,169 +1170,200 @@ let data = {
          "Introductie":"",
          "Ontwerpopdracht":""
       },
-      "Physicalcomputing":{
+      "Physical computing":{
          "Scratchspel":"",
          "Startmodule Arduino":"",
          "Startmodule Microbit":""
       }
    },
-   "Wiskunde A C":{
-      "0 Studiewijzers45en6w A C":{
-         "Studiewijzer5w A C20192020":"",
-         "Studiewijzer5w C20192020":""
+   "Wiskunde A C":{ 
+      "0 Studiewijzers45en6w A C":{ 
+         "Studiewijzer4w A20192020":"Studiewijzer 4wAC 2019-2020",
+         "Studiewijzer5w A C20192020":"Studiewijzer 5wA 2019-2020",
+         "Studiewijzer5w C20192020":"Studiewijzer 5wC 2019-2020",
+         "Studiewijzer6w A20192020":"Studiewijzer 6wA 2019-2020",
+         "Studiewijzer6w C20192020":"Studiewijzer 6wC 2019-2020"
       },
-      "0 Tipsvoorhetlerenenmakenvanrepetities":{
-         "Tipsvoorhetlerenenmakenvanrepetities":""
+      "0 Tipsvoorhetlerenenmakenvanrepetities":{ 
+         "Tipsvoorhetlerenenmakenvanrepetities":"Hoe leer je wiskunde en andere exacte vakken?"
       },
-      "Ev A Examenvoorbereidingw A":{
-         "Ev0 Aanwijzingen":"",
-         "Ev6 Formulesw A":"",
-         "Examensoefenen":""
+      "Ev A Examenvoorbereidingw A":{ 
+         "Ev0 Aanwijzingen":"Ev0: Aanwijzingen",
+         "Ev1 Voorbereiding S E1voorw A":"Ev1: Voorbereiding SE1 voor wA",
+         "Ev2 Voorbereiding S E2voorw A":"Ev2: Voorbereiding SE2 voor wA",
+         "Ev6 Formulesw A":"Ev6: Formules wA",
+         "Examensoefenen":"Ev4C: Examens oefenenen"
       },
-      "Functiesen Verbanden":{
-         "4w A C Diagnostischetoetsenperiode1":"",
-         "A Fv6 Periodiekefuncties":"",
-         "A Fv7 Transformaties":"",
-         "Fv1 Eerstegraadsfuncties":"",
-         "Fv2 Tweedegraadsfuncties":"",
-         "Fv3 Gebrokenfunctiesenwortelfuncties":"",
-         "Fv4 Exponentilefuncties":"",
-         "Fv5machtfuncties":"",
-         "Fv6 C Wiskunde C Periodiekeverschijnselen":"",
-         "Fv8 Formulesengrafiekenmanipuleren":""
+      "Ev C Examenvoorbereidingw C":{ 
+         "Ev0 C Aanwijzingenw C":"Ev0C: Aanwijzingen wC",
+         "Ev1 C Voorbereiding S E1voorw C":"Ev1C Voorbereiding SE1 voor wC",
+         "Ev2 C Voorbereiding S E2voorw C":"Ev2C Voorbereiding SE2 voor wC",
+         "Ev6 C Formulesw C":"Ev6C Formules wC",
+         "Examensoefenen":"Ev4C: Examens oefenenen"
       },
-      "Hellingenen Veranderingen":{
-         "He2 C Rijenvoorwiskunde C":"",
-         "He2 Deafgeleidefuncties":"",
-         "He3 Regelsvoorhetdifferentiren":"",
-         "He4 Eindexamenopgaven":""
+      "Functiesen Verbanden":{ 
+         "4w A C Diagnostische Toets E2":"4wA/C Diagnostische toetsen periode 2",
+         "4w A C Diagnostischetoetsenperiode1":"4wA/C Diagnostische toetsen periode 1",
+         "A Fv6 Periodiekefuncties":"Fv6: Periodieke functies",
+         "A Fv7 Transformaties":"Fv7: Logaritmische functies",
+         "Fv1 Eerstegraadsfuncties":"Fv1: Eerstegraads functies",
+         "Fv2 Tweedegraadsfuncties":"Fv2: Tweedegraads functies",
+         "Fv3 Gebrokenfunctiesenwortelfuncties":"Fv3: Gebroken functies en wortelfuncties",
+         "Fv4 Exponentilefuncties":"Fv4: Exponentiële functies",
+         "Fv5machtfuncties":"Fv5: machtfuncties",
+         "Fv6 C Wiskunde C Periodiekeverschijnselen":"Fv6C (Wiskunde C) Periodieke verschijnselen",
+         "Fv8 Formulesengrafiekenmanipuleren":"Fv8: Formules en grafieken manipuleren"
       },
-      "Helpdesk":{
-         "Hd2 Handleiding G R":"",
-         "Hd3 Studievaardigheden":"",
-         "Hd4 Examentips":""
+      "Hellingenen Veranderingen":{ 
+         "He1 C Hellingen":"He1C: Hellingen",
+         "He2 C Rijenvoorwiskunde C":"He2C: Rijen voor wiskunde C",
+         "He2 Deafgeleidefuncties":"He1 De afgeleide functie",
+         "He2 Rijen":"He2 Rijen",
+         "He3 Regelsvoorhetdifferentiren":"He3: Regels voor het differentiëren",
+         "He4 Eindexamenopgaven":"He4: Toepassingen van de afgeleide"
       },
-      "Kansrekenen":{
-         "5w A C Diagnostischetoets E3":"",
-         "Ka1 Rekenenmet Patronen":"",
-         "Ka2 Kansrekening":"",
-         "Ka3 Kansverdelingen":"",
-         "Ka5 Hypergeometrische Verdeling":"",
-         "Ka6 Statistiekmetgrotebestanden":""
+      "Helpdesk":{ 
+         "Hd1 Notatiesen Afspraken":"Hd1: Notaties en Afspraken",
+         "Hd2 Handleiding G R":"Hd2: Handleiding GR",
+         "Hd3 Studievaardigheden":"Hd3: Studievaardigheden",
+         "Hd4 Examentips":"Hd4: Examentips"
       },
-      "Logisch Redeneren":{
-         "Lo1 Basisstof":"",
-         "Lo2 Examenniveau":""
+      "Kansrekenen":{ 
+         "4 A C Diagnostischetoets Ka1ka2en Ka3":"4AC Diagnostische toets Ka1, ka2 en Ka3",
+         "5w A C Diagnostischetoets E3":"5wAC Diagnostische toets E3",
+         "Ka1 Rekenenmet Patronen":"Ka1: Rekenen met Patronen",
+         "Ka2 Kansrekening":"Ka2: Kansrekening",
+         "Ka3 Kansverdelingen":"Ka3: Kansverdelingen",
+         "Ka5 Debinomialeverdeling":"Ka5: De binomiale verdeling",
+         "Ka5 Hypergeometrische Verdeling":"Ka4: De hypergeometrische verdeling",
+         "Ka6 Statistiekmetgrotebestanden":"Ka6: Statistiek met grote bestanden",
+         "Ka7 Denormaleverderling":"Ka7: De normale verdeling",
+         "Ka8 Hypothesetoetsen":"Ka8: Hypothese toetsen"
       },
-      "Vaardigheden":{
-         "Vh1 Stelselsvergelijkingenen Breuken":"",
-         "Vh2 Vergelijkingen":"",
-         "Vh3 Eindniveauklas4":"",
-         "Vh4 Praktischeopdrachtklas5":"",
-         "Vh6 Eindniveau Klas6w A":""
+      "Logisch Redeneren":{ 
+         "Lo1 Basisstof":"Lo1: Basisstof",
+         "Lo2 Examenniveau":"Lo2: Examenniveau"
       },
-      "Vormen Ruimtewiskunde C":{
-         "Mk1 Meetkundebasis":"",
-         "Vo2 Perspectieftekenen":""
+      "Vaardigheden":{ 
+         "Vh1 Stelselsvergelijkingenen Breuken":"Vh1: Stelsels vergelijkingen en Breuken",
+         "Vh2 Vergelijkingen":"Vh2: Vergelijkingen",
+         "Vh3 Eindniveauklas4":"Vh3 Eindniveau klas 4",
+         "Vh4 Praktischeopdrachtklas5":"Vh4: Praktische opdracht klas 5",
+         "Vh5 Toegepastevaardighedeneindniveauklas5":"Vh5: Toegepaste vaardigheden eindniveau klas 5",
+         "Vh6 C Eindniveauklas6w C":"Vh6C Eindniveau klas 6 wC",
+         "Vh6 Eindniveau Klas6w A":"Vh6 Eindniveau Klas 6 wA"
       },
-      "Wiskunde A Examen":{
-         "Ex A1 Telproblemen":"",
-         "Ex A2 Telproblemen":"",
-         "Ex A3 Exponentile Verbanden":"",
-         "Ex A3 Rekenenaan Formules":"",
-         "Ex A5 Logaritmischeschaalenformules":"",
-         "Ex A6 Periodiekefuncties":"",
-         "Ex A7 Beredenerenmetdeafgeleide":"",
-         "Ex A8 Onderzoeksvraag":"",
-         "Ex A9 Gemengdeopgaven":"",
-         "Examenvoorbereiding":""
+      "Vormen Ruimtewiskunde C":{ 
+         "Mk1 Meetkundebasis":"Vo1 Meetkundige basisvaardigheden",
+         "Mk3 Meetkunde Examenniveau":"Mk3: Meetkunde Examenniveau",
+         "Vo2 Perspectieftekenen":"Vo2 Perspectief tekenen"
       },
-      "Wiskunde C Examen":{
-         "Aanwijzingen":"",
-         "Ex C10 Vormen Ruimte":"",
-         "Ex C11 Gemengdeopgaven":"",
-         "Ex C1 Rijen":"",
-         "Ex C2 Telproblemen":"",
-         "Ex C3 Rijenen Telproblemen":"",
-         "Ex C4 Lineaireverbanden":"",
-         "Ex C5 Exponentielegroeienprocenten":"",
-         "Ex C6 Exponentieleen Lineaireverbanden":"",
-         "Ex C7 Logaritme":"",
-         "Ex C8 Rekenenmetformules":"",
-         "Ex C9 Logica":""
+      "Wiskunde A Examen":{ 
+         "Ex A1 Telproblemen":"ExA1 Rijen",
+         "Ex A2 Telproblemen":"ExA2 Telproblemen",
+         "Ex A3 Exponentile Verbanden":"ExA4 Exponentiële Verbanden",
+         "Ex A3 Rekenenaan Formules":"ExA3 Rekenen aan Formules",
+         "Ex A5 Logaritmischeschaalenformules":"ExA5 Logaritmische schaal en formules",
+         "Ex A6 Periodiekefuncties":"ExA6 Periodieke functies",
+         "Ex A7 Beredenerenmetdeafgeleide":"ExA7 Beredeneren met de afgeleide",
+         "Ex A8 Onderzoeksvraag":"ExA8 Onderzoeksvraag",
+         "Ex A9 Gemengdeopgaven":"ExA9 Gemengde opgaven",
+         "Examenvoorbereiding":" * Aanwijzingen"
+      },
+      "Wiskunde C Examen":{ 
+         "Aanwijzingen":" * Aanwijzingen",
+         "Ex C10 Vormen Ruimte":"ExC10 Vorm en Ruimte",
+         "Ex C11 Gemengdeopgaven":"ExC11 Gemengde opgaven",
+         "Ex C1 Rijen":"ExC1 Rijen",
+         "Ex C2 Telproblemen":"ExC2 Telproblemen",
+         "Ex C3 Rijenen Telproblemen":"ExC3 Rijen en Telproblemen",
+         "Ex C4 Lineaireverbanden":"ExC4 Lineaire verbanden",
+         "Ex C5 Exponentielegroeienprocenten":"ExC5 Exponentiele groei en procenten",
+         "Ex C6 Exponentieleen Lineaireverbanden":"ExC6 Exponentiele en Lineaire verbanden",
+         "Ex C7 Logaritme":"ExC7 Logaritme",
+         "Ex C8 Rekenenmetformules":"ExC8 Rekenen met formules",
+         "Ex C9 Logica":"ExC9 Logica"
       }
    },
    "Wiskunde B Nieuwe Progamma":{
-      "0 Studiewijzers45en6w B":{
-         "Studieiwijzer5w B20192020":"",
-         "Studiewijzer4w B20192020":"",
-         "Studiewijzer6w B20192020":""
+      "displayName": "Wiskunde B Nieuwe Programma",
+      "0 Studiewijzers45en6w B":{ 
+         "Studieiwijzer5w B20192020":"Studiewijzer 5wB 2019-2020",
+         "Studiewijzer4w B20192020":"Studiewijzer 4wB 2019-2020",
+         "Studiewijzer6w B20192020":"Studiewijzer 6wB 2019-2020"
       },
-      "0 Tipsvoorhetlerenenmakenvanrepetities":{
-         "Tipsvoorhetlerenenmakenvanrepetities":""
+      "0 Tipsvoorhetlerenenmakenvanrepetities":{ 
+         "Tipsvoorhetlerenenmakenvanrepetities":"Hoe leer je wiskunde en andere exacte vakken?"
       },
-      "Differentirenen Integreren":{
-         "5w B Diagnostischetoets E3":"",
-         "Di1 Deafgeleidefunctie":"",
-         "Di2 Regelsvoorhetdifferentiren":"",
-         "Di4 Primitiveren":"",
-         "Di5 Toepassingenvanintegralen":""
+      "Differentirenen Integreren":{ 
+         "4w B Diagnostischetoets E3":"4wB Diagnostische toets E3",
+         "5w B Diagnostischetoets E2":"5wB Diagnostische toets E2",
+         "5w B Diagnostischetoets E3":"5wB Diagnostische toets E3",
+         "Di1 Deafgeleidefunctie":"Di1: De afgeleide functie",
+         "Di2 Regelsvoorhetdifferentiren":"Di2: Regels voor het differentiëren",
+         "Di3 Toepassingenvandeafgeleidefunctie":"Di3: Toepassingen van de afgeleide functie",
+         "Di4 Primitiveren":"Di4: Primitiveren",
+         "Di5 Toepassingenvanintegralen":"Di5: Toepassingen van integralen"
       },
-      "Examentraining":{
-         "Ex1 Periode1":"",
-         "Ex2 Periode2":"",
-         "Ex3 Periode3":"",
-         "Ex4 Examenopgaven":"",
-         "Ex5 Stappenplannenenformules":"",
-         "Ex6 Kennistoets":""
+      "Examentraining":{ 
+         "Ex1 Periode1":"Ex1: Periode 1",
+         "Ex2 Periode2":"Ex2: Periode 2",
+         "Ex3 Periode3":"Ex3: Periode 3",
+         "Ex4 Examenopgaven":"Ex4: Examenopgaven",
+         "Ex5 Stappenplannenenformules":"Ex5: Stappenplannen",
+         "Ex6 Kennistoets":"Ex6: Formules en Kennistoets"
       },
-      "Functiesen Vergelijkingen":{
-         "4w B Diagnostischetoets E2":"",
-         "Fu10 Herhaling Basisstof":"",
-         "Fu11 Logaritmischefuncties":"",
-         "Fu2 Tweedegraadsfuncties":"",
-         "Fu4 Ongelijkheden":"",
-         "Fu5 Exponentilefuncties":"",
-         "Fu6 Formulesengrafiekeninterpreteren":"",
-         "Fu7 Machtsfunctiesenpolynomen":"",
-         "Fu8 Vergelijkingenen Algebra":"",
-         "Fu9 Symmetrie Bewijzen":"",
-         "Transformaties":""
+      "Functiesen Vergelijkingen":{ 
+         "4w B Diagnostischetoets E2":"4wB Diagnostische toets E2",
+         "Fu10 Herhaling Basisstof":"Fu10: Herhaling Basisstof",
+         "Fu11 Logaritmischefuncties":"Fu11: Logaritmische functies",
+         "Fu1 Eerstegraads Functies":"Fu4 Ongelijkheden",
+         "Fu2 Tweedegraadsfuncties":"Fu2: Tweedegraads functies",
+         "Fu3 Gebrokenfunctiesenwortelfuncties":"Fu3: Gebroken functies en wortelfuncties",
+         "Fu4 Ongelijkheden":"Fu1 Eerstegraads functies",
+         "Fu5 Exponentilefuncties":"Fu5: Exponentiële functies",
+         "Fu6 Formulesengrafiekeninterpreteren":"Fu6: Formules en grafieken interpreteren",
+         "Fu7 Machtsfunctiesenpolynomen":"Fu7: Machtsfuncties en polynomen",
+         "Fu8 Vergelijkingenen Algebra":"Fu8: Vergelijkingen en Algebra",
+         "Fu9 Symmetrie Bewijzen":"Fu9: Symmetrie Bewijzen",
+         "Transformaties":"Fu12: Asymptotisch gedrag bij gebroken functies"
       },
-      "Goniometrie":{
-         "Go1 Periodieke Functies":"",
-         "Go2 Goniometrieincirkelsengrafiieken":"",
-         "Go3 Goniometrischeformulesafleiden":""
+      "Goniometrie":{ 
+         "Go1 Periodieke Functies":"Go1: Periodieke Functies",
+         "Go2 Goniometrieincirkelsengrafiieken":"Go2: Goniometrie in cirkels en grafiieken",
+         "Go3 Goniometrischeformulesafleiden":"Go3: Goniometrische formules afleiden"
       },
-      "Keuze Onderwerpen":{
-         "Ke1 P Ocordinatenmtransformaties":"",
-         "Ke2 Combinatoriek":"",
-         "Ke3 Kansrekening":""
+      "Keuze Onderwerpen":{ 
+         "Ke1 P Ocordinatenmtransformaties":"Ke1 PO co\u00f6rdinatenmtransformaties",
+         "Ke2 Combinatoriek":"Ke2 Combinatoriek",
+         "Ke3 Kansrekening":"Ke3 Kansrekening"
       },
-      "Meetkunde":{
-         "Me1 Goniometrieinnietrecchthoekigedriehoeken":"",
-         "Me2 Vergelijkingenvanlijnen":"",
-         "Me3 Lijnenenvectoren":"",
-         "Me4 Meetkundemetberekeningen":"",
-         "Me5 Rekenenaancirkels":"",
-         "Me6 Transformaties":"",
-         "Me7 Zwaartepunten":"",
-         "Me8 Bewegingsvergelijkingen":""
+      "Meetkunde":{ 
+         "Me1 Goniometrieinnietrecchthoekigedriehoeken":"Me1: Goniometrie in driehoeken",
+         "Me2 Vergelijkingenvanlijnen":"Me2: Vergelijkingen van lijnen",
+         "Me3 Lijnenenvectoren":"Me3: Lijnen en vectoren",
+         "Me4 Meetkundemetberekeningen":"Me4: Meetkunde met berekeningen",
+         "Me5 Rekenenaancirkels":"Me5: Rekenen aan cirkels",
+         "Me6 Transformaties":"Me6: Transformaties",
+         "Me7 Zwaartepunten":"Me7: Zwaartepunten",
+         "Me8 Bewegingsvergelijkingen":"Me8: Bewegingsvergelijkingen"
       },
-      "Overig":{
-         "Ov1 Wiskunde Olympiade":""
+      "Overig":{ 
+         "Ov1 Wiskunde Olympiade":"Ov1: Wiskunde Olympiade"
       },
-      "Vaardigheden":{
-         "Va2 De Grafische Rekenmachine":""
+      "Vaardigheden":{ 
+         "Va1 Notatiesen Afspraken":"Va1 Notaties en Afspraken",
+         "Va2 De Grafische Rekenmachine":"Va2 De Grafische Rekenmachine",
+         "Va3 Algebrasche Vaardigheden":"Va3 Algebra\u00efsche Vaardigheden"
       },
-      "Wiskundige Denkactiviteiten":{
-         "Wd1 Denkactiviteitenmet Analyse":"",
-         "Wd2 Denkactiviteitenbijopgavenmetparameter":"",
-         "Wd3 Denkactiviteitenmet Meetkunde":""
+      "Wiskundige Denkactiviteiten":{ 
+         "Wd1 Denkactiviteitenmet Analyse":"Wd1 Denkactiviteiten met Analyse",
+         "Wd2 Denkactiviteitenbijopgavenmetparameter":"Wd2: Denkactiviteiten bij opgaven met parameter",
+         "Wd3 Denkactiviteitenmet Meetkunde":"Wd3 Denkactiviteiten met Meetkunde"
       }
    },
    "Wiskunde D":{
-      "0 Studiewijzer56w D":{
+      "0 Studiewijzer 56w D":{
          "":""
       },
       "1a Statistiek":{
@@ -1305,89 +1372,103 @@ let data = {
       "1b Cryptografie":{
          "":""
       },
-      "2a Analytischemeetkunde":{
+      "2a Analytische meetkunde":{
          "":""
       },
-      "2b Lineairealgebraenruitmemeetkunde":{
+      "2b Lineaire algebra en ruitmemeetkunde":{
          "":""
       },
       "3aeigenkeuzeonderwerp":{
          "":""
       },
-      "3bdynamischmodellerenendifferentiaalvergelijkingen":{
+      "3b dynamisch modelleren en differentiaal vergelijkingen":{
          "":""
       },
-      "4abcomplexegetallen":{
+      "4ab complexe getallen":{
          "":""
       }
    },
-   "Wiskunde Onderbouw":{
-      "0 Studiewijzers12en3wi":{
-         "Studiewijzerklas1wi20192020":"",
-         "Studiewijzerklas2wi20192020":"",
-         "studiewijzer3wi20192020":""
+   "Wiskunde Onderbouw":{ 
+      "0 Studiewijzers 1 2 en 3 wi":{ 
+         "Studiewijzerklas1wi20192020":"Studiewijzer klas 1wi 2019-2020",
+         "Studiewijzerklas2wi20192020":"Studiewijzer klas 2wi 2019-2020",
+         "studiewijzer3wi20192020":"Studiewijzer klas 3wi 2019-2020"
       },
-      "0 Tipsvoorhetlerenenmakenvanrepetities":{
-         "opop":""
+      "0 Tips voor het leren en maken van repetities":{ 
+         "opop":"Hoe leer je wiskunde en andere exacte vakken?"
       },
-      "Algebra":{
-         "A1 Rekenenmetletters":"",
-         "A2 Rekenenmethaakjes":"",
-         "A3 Rekenregels Algebra":"",
-         "A4 Wortelsenbreuken":""
+      "Algebra":{ 
+         "A1 Rekenenmetletters":"A1: Rekenen met letters",
+         "A2 Rekenenmethaakjes":"A2: Rekenen met haakjes",
+         "A3 Rekenregels Algebra":"A3: Rekenregels Algebra",
+         "A4 Wortelsenbreuken":"A4: Wortels en breuken",
+         "A5 Afronding Algebra":"A5: Afronding Algebra"
       },
-      "Excel":{
-         "X1 Inleiding":""
+      "Excel":{ 
+         "X1 Inleiding":"X1: Inleiding",
+         "X2 Formulesgebruiken":"X2: Formules gebruiken"
       },
-      "Functiesen Grafieken":{
-         "F10 Gebrokenfunctiesenwortelfuncties":"",
-         "F1 Tabellenengrafieken":"",
-         "F2 Formulesenvergelijkingen":"",
-         "F4 Lineairevergelijkingenenongelijkheden":"",
-         "F5 Kwadratische Verbanden":"",
-         "F6 Kwadratischevergelijkingenenongelijkheden":"",
-         "F7 Eerstegraads Functies":"",
-         "F8 Tweedegraads Functies":"",
-         "F9 Exponentile Functies":""
+      "Functies en Grafieken":{ 
+         "F10 Gebroken functies en wortelfuncties":"F10: Gebroken functies en wortelfuncties",
+         "F1 Tabellen en grafieken":"F1: Tabellen en grafieken",
+         "F2 Formules en vergelijkingen":"F2: Formules en vergelijkingen",
+         "F3 Lineaire verbanden":"F3: Lineaire verbanden",
+         "F4 Lineaire vergelijkingen en ongelijkheden":"F4: Lineaire vergelijkingen en ongelijkheden",
+         "F5 Kwadratische Verbanden":"F5: Kwadratische Verbanden",
+         "F6 Kwadratische vergelijkingen en ongelijkheden":"F6: Kwadratische vergelijkingen en ongelijkheden",
+         "F7 Eerstegraads Functies":"F7: Eerstegraads Functies",
+         "F8 Tweedegraads Functies":"F8: Tweedegraads Functies",
+         "F9 Exponentile Functies":"F9: Exponentiële Functies"
       },
-      "Handleiding":{
+      "Handleiding":{ 
          "Handleiding":""
       },
-      "Meetkunde":{
-         "M1 Inleiding":"",
-         "M2 Hoeken":"",
-         "M6 Destellingvan Pythagoras":"",
-         "M8 Goniometrie":"",
-         "Wiskundewandeling":""
+      "Meetkunde":{ 
+         "M10 Stelsels van vergelijkingen":"M10: Stelsels van vergelijkingen",
+         "M1 Inleiding":"M1: Inleiding",
+         "M2 Hoeken":"M2: Hoeken",
+         "M3 Vlakke Meetkunde":"M3: Vlakke Meetkunde",
+         "M4 Ruimtemeetkunde":"M4: Ruimtemeetkunde",
+         "M5 Oppervlakteenomtrek":"M5: Oppervlakte en omtrek",
+         "M6 Destellingvan Pythagoras":"M6: De stelling van Pythagoras",
+         "M7 Oppervlakte en inhoud":"M7: Oppervlakte en inhoud",
+         "M8 Goniometrie":"M8: Goniometrie",
+         "M9 Congruentie en Gelijkvormigheid":"M9: Congruentie en Gelijkvormigheid",
+         "Wiskunde wandeling":"De Wiskunde wandeling"
       },
-      "Overig":{
-         "O1 Helpenmet Liber":"",
-         "O2 Kangoeroe":"",
-         "O3 Interessant":""
+      "Overig":{ 
+         "Lineair Programmeren":"Lineair Programmeren",
+         "O1 Helpenmet Liber":"O1: Helpen met Liber",
+         "O2 Kangoeroe":"O2: Kangoeroe",
+         "O3 Interessant":"O3: Interessant"
       },
-      "Rekenen":{
-         "R1 Verhoudingen":"",
-         "R2 Breuken":"",
-         "R3 Procenten":"",
-         "R4 Voorrangsregels":"",
-         "R5 Negatievegetallen":"",
-         "R6 Metriek":""
+      "Rekenen":{ 
+         "R1 Verhoudingen":"R1: Verhoudingen",
+         "R2 Breuken":"R2: Breuken",
+         "R3 Procenten":"R3: Procenten",
+         "R4 Voorrangs regels":"R4: Voorrangsregels",
+         "R5 Negatieve getallen":"R5: Negatieve getallen",
+         "R6 Metriek":"R6: Metriek",
+         "R7 Toegepastrekenen":"R7: Toegepast rekenen",
+         "R8 Voorbereiding rekentoets":"R8: Voorbereiding rekentoets"
       },
-      "Statistiekenkansrekenen":{
-         "K1 Combinatoriek":"",
-         "K2 Kansrekenen":"",
-         "K3 Kansverdelingen":"",
-         "K4 Binomialeverdeling":"",
-         "K5 Normaleverdeling":"",
-         "Klas3 H6":"",
-         "S1 Gegevensverwerken":"",
-         "S3 Statistische Berekeningen":"",
-         "S4 Het Vaasmodel":"",
-         "S5 Statistische Verwerking":""
+      "Statistiek en kansrekenen":{ 
+         "K1 Combinatoriek":"K1: Combinatoriek",
+         "K2 Kansrekenen":"K2: Kansrekenen",
+         "K3 Kans verdelingen":"K3: Kansverdelingen",
+         "K4 Binomiale verdeling":"K4: Binomiale verdeling",
+         "K5 Normale verdeling":"K5: Normale verdeling",
+         "Klas3 H6":"Klas3: H6",
+         "S1 Gegevens verwerken":"S1: Gegevens verwerken",
+         "S2 Tellen en kansen":"S2: Tellen en kansen",
+         "S3 Statistische Berekeningen":"S3: Statistische Berekeningen",
+         "S4 Het Vaasmodel":"S4: Het Vaasmodel",
+         "S5 Statistische Verwerking":"S5: Statistische Verwerking"
       },
-      "Wiskundige Modellen":{
-         "W2 Wiskundige Modellenbijnietlineairemodellen":"",
-         "W3 Modellenindemeetkunde":""
+      "Wiskundige Modellen":{ 
+         "W1 Wiskundige Modellen bij lineaire verbanden":"W1: Wiskundige Modellen bij lineaire verbanden",
+         "W2 Wiskundige Modellen bij niet lineaire modellen":"W2: Wiskundige Modellen bij niet-lineaire modellen",
+         "W3 Modellen in de meetkunde":"W3: Modellen in de meetkunde"
       }
    }
 }

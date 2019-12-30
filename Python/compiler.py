@@ -27,11 +27,11 @@ for x in onlyfiles:
             new = []
             for y in range(len(items)):
                 if z % 2 == 0:
-                    new.append( items[y].replace("/sites/liber/" + "LIC", "").replace("\n", "")[1:] )
+                    new.append(items[y].replace("/sites/liber/" + "Frans", "").replace("\n", "")[1:] )
                 else:
                     displayNames[new[-1].split("/")[-1]] = items[y].replace("\n", "")
                 z += 1
-            
+
             dir = {}
 
             for item in new:
@@ -40,15 +40,11 @@ for x in onlyfiles:
                     try:
                         dir[z[0]][z[1]] = ""
                     except:
-                        dir[z[0]] = {z[1]: ""} 
-
-        
+                        dir[z[0]] = {z[1]: ""}         
 
     full[x] = dir
 
 camel = {}
-
-print(displayNames)
 
 #pprint.pprint(full)
 

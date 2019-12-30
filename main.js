@@ -51,7 +51,7 @@ let sep3 = document.createElement("div");
 function changeDomain(domain) {
     var subjects = [];
     for (item in data[domain]) {
-        subjects.push(item);
+        if (item != "displayName") { subjects.push(item); }
     }
 
     var displayNames = [];
