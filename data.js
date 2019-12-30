@@ -334,84 +334,86 @@ let data = {
          "Prikkels en impulsen":""
       }
    },
-   "Duits":{
-      "Allgemein":{
-         "PTA Oberstufe":"",
-         "PT Unterstufe":""
-      },
-      "Deutschlesen fr LIC":{
-         "Bchertipps Deutsch":"Büchertipps Deutsch"
-      },
-      "Grammatik Oberstufe B1 B2":{
-         "Naamvallen":"",
-         "Trappenvanvergelijking":"",
-         "Voornaamwoorden":"",
-         "Werkwoorden":"",
-         "Zinsbouw":""
-      },
-      "Grammatik Unterstufe A1 A2":{
-         "A1 Lidwoorden":"",
-         "A1 Onregelmatige werkwoorden naar ww":"",
-         "A1 Telwoorden":"",
-         "A1 Zelfstandig naamwoord":"",
-         "A2 Das of dass":"",
-         "A2 Mann of man":"",
-         "A2 Sterke werkwoorden naar ww":"",
-         "A2 Voorzetsels":"",
-         "A2 Werkwoorden met een vaste naamval naar ww":"",
-         "Naamvallen":"",
-         "Werkwoorden":""
-      },
-      "Hren":{
-         "A1 Hren":"A1 Hören",
-         "A2 Hren":"A2 Hören",
-         "B1 Hren":"B1 Hören",
-         "B2 Hren":"B2 Hören",
-         "C1 C2 Hren":"C1 C2 Hören",
-         "ERK Ziele Hren":"ERK Ziele Hören",
-         "Fernseh und Filmtipps":"",
-         "Tipps zum Hren":"Tipps zum Hören"
-      },
-      "Landeskunde":{
-         "Das deutsche Schulsystem":"",
-         "Essen und Trinken":""
-      },
-      "Lesen":{
-         "A1 Lesen":"",
-         "A2 Lesen":"",
-         "B1 Lesen":"",
-         "B2 Lesen":"",
-         "C1 C2 Lesen":"",
-         "ERK Ziele Lesen":""
-      },
-      "Schreiben":{
-         "A1 Schreiben":"",
-         "A2 Schreiben":"",
-         "B1 Schreiben":"",
-         "B2 Schreiben":"",
-         "C1 C2 Schreiben":"",
-         "ERK Ziele Schreiben":""
-      },
-      "Sprechen":{
-         "A1 Sprechen":"",
-         "A2 Sprechen":"",
-         "B1 Sprechen":"",
-         "B2 Sprechen":"",
-         "C1 C2 Sprechen":"",
-         "ERK Ziele Sprechen":""
-      },
-      "Themen Oberstufe":{
-         "B1 Themen":"",
-         "B2 Themen":""
-      },
-      "Themen Unterstufe":{
-         "A1 Themen":"",
-         "A2 Themen":""
-      },
-      "Wahlprogramm Literatur":{
-         "Bll Und sagtekeineinziges Wort":"Böll Und sagte kein einziges Wort",
-         "Kafka Die Verwandlung":""
-      }
+   "Duits":{ 
+         "Allgemein":{ 
+            "P T A Oberstufe":"PTA Oberstufe",
+            "P T Unterstufe":"PT Unterstufe"
+         },
+         "Deutschlesenfr L I C":{ 
+            "displayName": "Deutsch lesen fur LIC",
+            "Bchertipps Deutsch":"Bücchertipps Deutsch"
+         },
+         "Grammatik Oberstufe B1 B2":{ 
+            "Naamvallen":"",
+            "Trappenvanvergelijking":"Trappen van vergelijking",
+            "Voornaamwoorden":"",
+            "Werkwoorden":"",
+            "Zinsbouw":""
+         },
+         "Grammatik Unterstufe A1 A2":{ 
+            "A1 Lidwoorden":"A1 Lidwoorden",
+            "A1 Onregelmatigewerkwoordennaarww":"A1 Onregelmatige werkwoorden (naar ww)",
+            "A1 Telwoorden":"A1 Telwoorden",
+            "A1 Zelfstandignaamwoord":"A1 Zelfstandig naamwoord",
+            "A2 Dasofdass":"A2 Das of dass?",
+            "A2 Mannofman":"A2 Mann of man?",
+            "A2 Sterkewerkwoordennaarww":"A2 Sterke werkwoorden (naar ww)",
+            "A2 Voorzetsels":"A2 Voorzetsels",
+            "A2 Werkwoordenmeteenvastenaamvalnaarww":"A2 Werkwoorden met een vaste naamval (naar ww)",
+            "Naamvallen":"",
+            "Werkwoorden":""
+         },
+         "Hren":{ 
+            "displayName": "Hören",
+            "A1 Hren":"A1 Hören",
+            "A2 Hren":"A2 Hören",
+            "B1 Hren":"B1 Hören",
+            "B2 Hren":"B2 Hören",
+            "C1 C2 Hren":"C1-C2 Hören",
+            "E R K Ziele Hren":"ERK Ziele Hören",
+            "Fernsehund Filmtipps":"Fernseh- und Filmtipps",
+            "Tippszum Hren":"Tipps zum Hören"
+         },
+         "Landeskunde":{ 
+            "Dasdeutsche Schulsystem":"Das deutsche Schulsystem",
+            "Essenund Trinken":"Essen und Trinken"
+         },
+         "Lesen":{ 
+            "A1 Lesen":"A1 Lesen",
+            "A2 Lesen":"A2 Lesen",
+            "B1 Lesen":"B1 Lesen",
+            "B2 Lesen":"B2 Lesen",
+            "C1 C2 Lesen":"C1-C2 Lesen",
+            "E R K Ziele Lesen":"ERK Ziele Lesen"
+         },
+         "Schreiben":{ 
+            "A1 Schreiben":"A1 Schreiben",
+            "A2 Schreiben":"A2 Schreiben",
+            "B1 Schreiben":"B1 Schreiben",
+            "B2 Schreiben":"B2 Schreiben",
+            "C1 C2 Schreiben":"C1-C2 Schreiben",
+            "E R K Ziele Schreiben":"ERK Ziele Schreiben"
+         },
+         "Sprechen":{ 
+            "A1 Sprechen":"A1 Sprechen",
+            "A2 Sprechen":"A2 Sprechen",
+            "B1 Sprechen":"B1 Sprechen",
+            "B2 Sprechen":"B2 Sprechen",
+            "C1 C2 Sprechen":"C1-C2 Sprechen",
+            "E R K Ziele Sprechen":"ERK Ziele Sprechen"
+         },
+         "Themen Oberstufe":{ 
+            "B1 Themen":"B1 Themen",
+            "B2 Themen":"B2 Themen"
+         },
+         "Themen Unterstufe":{ 
+            "A1 Themen":"A1 Themen",
+            "A2 Themen":"A2 Themen"
+         },
+         "Wahlprogramm Literatur":{ 
+            "Bll Undsagtekeineinziges Wort":"Böll - Und sagte kein einziges Wort...",
+            "Kafka Die Verwandlung":"Kafka - Die Verwandlung"
+         }
    },
    "Economie":{
       "Arbeidsmarkt":{
@@ -535,119 +537,119 @@ let data = {
          "Techniek instrument of autonome macht":""
       },
       "Vaardigheden":{
-         "Filmopdracht Denieuwemens":"",
-         "Filosofischessay":"",
-         "Socratischgesprek":"",
-         "Tipsvoortoetsen":""
+         "Filmopdracht De nieuwe mens":"",
+         "Filosofisch essay":"",
+         "Socratisch gesprek":"",
+         "Tips voor toetsen":""
       },
       "Wijsgerige Antropologie":{
          "Basisbegrippen":"",
          "Identiteit":"",
          "Vrije Wil":"",
          "Vrijheid":"",
-         "Watisdemens":""
+         "Wat is de mens":""
       }
    },
    "Frans":{
-      "A1taaleigenaardigheden":{
-         "Aussi Ooken Nepasnonplusookniet":"",
-         "aangevenhoevaakjeietsdoetfrequentie":"",
-         "bezighedenindevrijetijd":"",
-         "dagdelenendagenvandeweek":"",
-         "eentaalspreken":"",
-         "gesprekinwinkelrestaurantenz":"",
+      "A1 taaleigenaardigheden":{
+         "Aussi Ook en Ne pas non plus ook niet":"",
+         "aangeven hoe vaak je iets doet frequentie":"",
+         "bezigheden in de vrije tijd":"",
+         "dagdelen en dagen van de week":"",
+         "een taal spreken":"",
+         "gesprek in winkel restaurant enz":"",
          "getallen":"",
-         "hoevertaaljekunnenmetpouvoirofsavoir":"",
-         "ilya":"",
+         "hoe vertaal je kunnen met pouvoir of savoir":"",
+         "il y a":"",
          "kloktijden":"",
          "leeftijd":"",
-         "middelenvanvervoer":"",
-         "namenvanlandeninwonerstalenenbijvnwvanlanden":"",
-         "pratenovereenschoolvak":"",
+         "middelen van vervoer":"",
+         "namen van landen inwonerstalen en bijv nw van landen":"",
+         "praten over een schoolvak":"",
          "telefoonnummers":"",
-         "uiterlijkbeschrijvenlichaamenkleding":"",
-         "vanallesovertijdsaanduidingen":"",
-         "woneningaannaar":""
+         "uiterlijk beschrijven lichaam en kleding":"",
+         "van alles over tijdsaanduidingen":"",
+         "wonen in gaan naar":""
       },
-      "A2taaleigenaardigheden":{
-         "eenadviesgeven":"",
-         "hetbeschrijvenvaneenstadenland":"",
-         "pratenovereenberoep":"",
-         "pratenoverhetweer":"",
-         "weeropnieuwherww":""
+      "A2 taaleigenaardigheden":{
+         "een advies geven":"",
+         "het beschrijven van een stad en land":"",
+         "praten over een beroep":"",
+         "praten over het weer":"",
+         "weer opnieuw her ww":""
       },
       "Studiewijzers":{
-         "Periode2":""
+         "Periode 2":""
       },
       "Taalregels":{
-         "aanwijzendevoornaamwoorden":"",
-         "betrekkelijkevoornaamw":"",
-         "bezittelijkevoornaamwoorden":"",
-         "bijvoeglijkenaamwoorden":"",
+         "aanwijzende voornaamwoorden":"",
+         "betrekkelijke voornaamw":"",
+         "bezittelijke voornaamwoorden":"",
+         "bijvoeglijke naamwoorden":"",
          "bijwoorden":"",
-         "dathetvertalenmetceofmetcela":"",
-         "eenzinsdeelbeklemtonen":"",
-         "getallentelwoordenenrangtelwoorden":"",
+         "dat het vertalen met ce of met ce la":"",
+         "een zinsdeel beklemtonen":"",
+         "getallen telwoorden en rangtelwoorden":"",
          "lidwoorden":"",
-         "onbepaaldevoornaamwoorden":"",
+         "onbepaalde voornaamwoorden":"",
          "ontkenning":"",
-         "persoonlijkevoornaamwoorden":"",
-         "trappenvanvergelijking":"",
+         "persoonlijke voornaamwoorden":"",
+         "trappen van vergelijking":"",
          "voorzetsels":"",
-         "vragendevoornaamwoorden":"",
+         "vragende voornaamwoorden":"",
          "werkwoorden":"",
-         "werkwoordenalsonderwerpvandezin":"",
-         "woordenvanhoeveelheid":"",
+         "werkwoorden als onderwerp van de zin":"",
+         "woorden van hoeveelheid":"",
          "zinsontleden":"",
          "zinsvolgorde":""
       },
       "Vocabulaire":{
-         "klas1vocabulaire":"",
-         "klas2vocabulaire":"",
-         "klas3vocabulaire":"",
-         "klas4vocabulaire":"",
-         "klas5vocabulaire":"",
-         "klas6vocabuliare":"",
-         "werkwoordenvoorzetsels":""
+         "klas 1 vocabulaire":"",
+         "klas 2 vocabulaire":"",
+         "klas 3 vocabulaire":"",
+         "klas 4 vocabulaire":"",
+         "klas 5 vocabulaire":"",
+         "klas 6 vocabuliare":"",
+         "werkwoord en voorzetsels":""
       },
-      "hoedrukjeinhet Fransuit":{
-         "Portaalinformatieordenenineentekst":"",
-         "aandachtvragen":"",
-         "beginnenteofdoorgaanmetofstoppenmet":"",
-         "bezigzijnteophetpuntstaantenetofzojuistge":"",
-         "devertalingvanhetwoordwat":"",
-         "eenadviesgevenofeenadviesvragen":"",
-         "eenconclusietrekken":"",
-         "eendoeluitdrukken":"",
-         "eenindirecteredenmaken":"",
-         "eennuanceringtoevoegenbijbijvnwofmeningenofemotiesenz":"",
-         "eentegenstelling":"",
-         "eenverbodoftoestemming":"",
-         "eenvergelijking":"",
-         "eenverplichting":"",
-         "eenvoorwaarde":"",
-         "eenwensofverlangenuitdrukken":"",
-         "elkaarwerkwoord":"",
-         "emotiesuitdrukken":"",
-         "getallentelwoordenenrangtelwoorden":"",
-         "hetbeschrijvenvaneenlandstadenz":"",
-         "hoeietsofiemanderuitziet":"",
-         "hoevaakietsgebeurt":"",
-         "iemanduitnodigen":"",
-         "ietsuitleggenofnadertoelichten":"",
-         "informatiestapelenoftoevoegen":"",
-         "jemeninggeven":"",
-         "latenvertalenmetlaisserofmetfaire":"",
-         "makenvertalenmetfaireofmetrendre":"",
-         "oorzaakengevolg":"",
-         "plannenenvoornemensuitdrukken":"",
-         "portaaluitdrukkenopwelkemanierietsgebeurt":"",
-         "pratenoverpijnaaneenlichaamsdeel":"",
+      "hoe druk je in het Frans uit":{
+         "Portaal informatie ordenen in een tekst":"",
+         "aandacht vragen":"",
+         "beginnen te of door gaan met of stoppen met":"",
+         "bezig zijn te op het punt staan te net of zojuist ge":"",
+         "de vertaling van het woord wat":"",
+         "een advies geven of een advies vragen":"",
+         "een conclusie trekken":"",
+         "een doel uitdrukken":"",
+         "een indirecte reden maken":"",
+         "een nuancering toevoegen bij bijvnw of meningen of emoties enz":"",
+         "een tegenstelling":"",
+         "een verbod of toestemming":"",
+         "een vergelijking":"",
+         "een verplichting":"",
+         "een voorwaarde":"",
+         "een wens of verlangen uitdrukken":"",
+         "elkaar werkwoord":"",
+         "emoties uitdrukken":"",
+         "getallen telwoorden en rangtelwoorden":"",
+         "het beschrijven van een land stad enz":"",
+         "hoe iets of iemand eruit ziet":"",
+         "hoe vaak iets gebeurt":"",
+         "iemand uitnodigen":"",
+         "iets uitleggen of nader toelichten":"",
+         "informatie stapelen of toevoegen":"",
+         "je mening geven":"",
+         "laten vertalen met laisser of met faire":"",
+         "maken vertalen met faire of met rendre":"",
+         "oorzaak en gevolg":"",
+         "plannen en voornemens uitdrukken":"",
+         "portaal uitdrukken op welke manier iets gebeurt":"",
+         "praten over pijn aan een lichaamsdeel":"",
          "reizen":"",
          "samenvatten":"",
-         "vanallesovertijdsaanduidingen":"",
-         "verbazinguitdrukken":"",
-         "verschillendemanierenomeenonderwerpaantesnijden":"",
+         "van alles over tijdsaanduidingen":"",
+         "verbazing uitdrukken":"",
+         "verschillende manieren om een onderwerp aan te snijden":"",
          "volgensofnaarzeggenvanbron":"",
          "waariemandofietszichbevindt":"",
          "watzegjealsjeietskrijgtofgeeft":"",

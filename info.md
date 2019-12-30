@@ -13,6 +13,11 @@ Op het moment hebben veel links nog geen spaties. Dit is vanwege waarop de data 
 
 Verder bevatten de links geen speciale karakters (ï, ë, ö, etc). Op het moment is er nog geen oplossing voor dit probleem, maar ook hier wordt aan gewerkt.
 
+Ten slotte is sommige data niet correct geexporteerd, en daardoor missen er nu een paar onderdelen. Dit is een lijst van bekende gaten:
+
+1. Studiewijzers van Duits
+2. B1 en B2 taaleigenaardigheden van Frans
+
 ## Technische Details
 > TODO
 

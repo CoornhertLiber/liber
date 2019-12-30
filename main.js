@@ -61,6 +61,7 @@ function changeDomain(domain) {
     }
     
     fillList(displayNames, subjects, subjectList);
+    print(subjects);
 
     selected[0] = domain;
 

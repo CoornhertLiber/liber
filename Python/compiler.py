@@ -6,36 +6,49 @@ import re
 
 pp = pprint.PrettyPrinter(indent=4)
 
-mypath = getcwd() + "/data"
+mypath = getcwd() #+ "/data"
 
-onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
+#onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 
 full = {}
 
 #onlyfiles = [x for x in onlyfiles if "Z" not in x]
 #onlyfiles = onlyfiles[:1]
 
+onlyfiles = ["links"]
+
+displayNames = {"": ""}
+
 for x in onlyfiles:
 
-    with open("data/" + x, "r") as f:
-        items = f.readlines()
-        for y in range(len(items)):
-            items[y] = items[y].replace("/sites/liber/" + x, "").replace("\n", "")[1:]
-        
-        dir = {}
+    with open("" + x, "r") as f:
+            items = f.readlines()
+            z = 0
+            new = []
+            for y in range(len(items)):
+                if z % 2 == 0:
+                    new.append( items[y].replace("/sites/liber/" + "Duits", "").replace("\n", "")[1:] )
+                else:
+                    displayNames[new[-1].split("/")[-1]] = items[y].replace("\n", "")
+                z += 1
+            
+            dir = {}
 
-        for item in items:
-            if "/" in item:
-                z = item.split("/")
-                try:
-                    dir[z[0]][z[1]] = ""
-                except:
-                    dir[z[0]] = {z[1]: ""}
+            for item in new:
+                if "/" in item:
+                    z = item.split("/")
+                    try:
+                        dir[z[0]][z[1]] = ""
+                    except:
+                        dir[z[0]] = {z[1]: ""} 
+
         
 
     full[x] = dir
 
 camel = {}
+
+print(displayNames)
 
 #pprint.pprint(full)
 
@@ -44,7 +57,11 @@ for domain in sorted(full.keys()):
     camel[domain] = {}
     for subject in x:
         y = full[domain][subject].keys()
-        camel[domain][subject] = {a: "a" for a in sorted(y)}
+        pprint.pprint(displayNames)
+        camel[domain][subject] = {a: displayNames[a] for a in sorted(y)}
+        for key in camel[domain][subject].keys():
+            if key == camel[domain][subject][key]:
+                camel[domain][subject][key] = "" 
 
 
 camel_pat = re.compile(r'([A-Z])')
