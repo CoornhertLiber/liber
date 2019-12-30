@@ -48,3 +48,37 @@ My next discovery was the endpoint "**v1.0/sites?search**". This endpoint allows
 I then proceeded to download the data for all subjects individually and put it into seperate files. I had now finally acquired all the data Liber had, and I was ready to start compiling it into a useable format.
 
 ## Converting the data
+Now that I had all the data I needed, i started working on compiling it. The JSON from the API looked as follows:
+
+```
+"value": [
+    {
+        "createdDateTime": "2016-04-13T08:01:04Z",
+        "id": "coornhert.sharepoint.com,[REDACTED-ID],[REDACTED-ID]",
+        "lastModifiedDateTime": "2018-12-21T14:03:09Z",
+        "name": "liber",
+        "webUrl": "https://coornhert.sharepoint.com/sites/liber",
+        "displayName": "Liber",
+        "root": {},
+        "siteCollection": {
+            "hostname": "coornhert.sharepoint.com"
+        }
+    }
+]
+```
+
+By this time i had already created a data structure for the site, which looks as follows:
+```
+"DOMAIN": {
+    "SUBJECT1": {
+        "MODULE1": "link",
+        "MODULE2": "link"
+    }
+    "SUBJECT2": {
+        "MODULE1": "link",
+        "MODULE2": "link"
+    }
+}
+```
+
+The rest of the documentation will follow.
