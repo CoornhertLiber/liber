@@ -60,7 +60,7 @@ function changeDomain(domain) {
         else { displayNames.push(data[domain][subjects[i]]["displayName"]); }
     }
     
-    fillList(displayNames, subjectList);
+    fillList(displayNames, subjects, subjectList);
 
     selected[0] = domain;
 
@@ -97,13 +97,12 @@ function changeSubject(domain, subject) {
             displayNames.push(item);
         }
     }
-    print(displayNames);
 
-    fillList(displayNames, moduleList);
+    fillList(displayNames, modules, moduleList);
 
 }
 
-function fillList(input, funcList) {
+function fillList(input, realNames, funcList) {
     var inputLength = input.length;
     for (var x = 0 ; x < funcList.childNodes.length; x++) {
         if (x < inputLength) {
@@ -112,7 +111,7 @@ function fillList(input, funcList) {
             if (funcList == moduleList) {
                 var s0 = selected[0].split(" ").join("");
                 var s1 = selected[1].split(" ").join("");
-                var s2 = input[x].split(" ").join("");
+                var s2 = realNames[x].split(" ").join("");
                 var fin = s0 + "/" + s1 + "/" + s2;
                 funcList.childNodes[x].setAttribute("href", "https://coornhert.sharepoint.com/sites/liber/" + fin);
             }

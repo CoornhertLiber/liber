@@ -1,56 +1,3 @@
-let data1 = {
-    "Aardrijkskunde":{
-       "displayName": "AKTest",
-       "Aarde":{
-          "displayName": "AardeTest",
-          "Aardbevingen":"",
-          "Bodem en landschap":"",
-          "Gebergtevorming":"",
-          "Gesteenten en mineralen":"",
-          "Lucht en waterstromen":"",
-          "Natuurrampen":"",
-          "Platentektoniek":"",
-          "Rivieren":"",
-          "Sferenenkringlopen":"",
-          "Verwering erosie en sedimentatie":"",
-          "Vulkanisme":"",
-          "Weer en klimaat":""
-       },
-       "Actualiteit":{
-          "Aardrijkskundig nieuws":"",
-          "Games en andere leuk materiaal":"",
-          "Google Earth":""
-       },
-       "Handige links":{
-          "displayName": "LinksTest",
-          "Hulp bij aardrijkskunde":""
-       },
-       "Klas 1":{
-          "Periode 1":"",
-          "Periode 2":"",
-          "Vaardigheden":""
-       },
-    },
-    "BV": {
-       "displayName":"BVTest",
-       "Algemene begrippen":{
-          "Algemene begrippen":""
-       },
-       "Beeldaspecten":{
-          "displayName": "BeeldaspectenTest",
-          "Compositie":"",
-          "Kleur":"",
-          "Licht":"",
-          "Ruimte":"",
-          "Vorm":""
-       },
-       "Kunststijlen":{
-          "Kunststromingen":"",
-          "Tijdbalk":""
-       },
-    }
-}
-
 let data = {
    "Aardrijkskunde":{
       "Aarde":{
@@ -91,7 +38,7 @@ let data = {
          "Conflicten":"",
          "Onderzoek":"",
          "Voorlichting bovenbouw":"",
-         "Zuid Oost Azi":""
+         "Zuid Oost Azi":"Zuid Oost Azië"
       },
       "Klas 4":{
          "Globalisering":""
@@ -236,7 +183,7 @@ let data = {
          "Celcyclus":"",
          "DNA RNA en eiwitsynthese":"",
          "Erfelijkheid":"",
-         "Overzicht DNA Erfelijkheid h3enh7":"",
+         "Overzicht DNA Erfelijkheid h3enh7":"Overzicht DNA Erfelijkheid",
          "Populatiegenetica":""
       },
       "Instandhouden organisme":{
@@ -379,7 +326,7 @@ let data = {
          "Weefsels":""
       },
       "Rijken":{
-         "Bacterin":""
+         "Bacterin":"Bacteriën"
       },
       "Test Waarnemen":{
          "Bouw en werkingen zintuigen":"",
@@ -393,7 +340,7 @@ let data = {
          "PT Unterstufe":""
       },
       "Deutschlesen fr LIC":{
-         "Bchertipps Deutsch":"test"
+         "Bchertipps Deutsch":"Büchertipps Deutsch"
       },
       "Grammatik Oberstufe B1 B2":{
          "Naamvallen":"",
@@ -404,30 +351,30 @@ let data = {
       },
       "Grammatik Unterstufe A1 A2":{
          "A1 Lidwoorden":"",
-         "A1 Onregelmatigewerkwoordennaarww":"",
+         "A1 Onregelmatige werkwoorden naar ww":"",
          "A1 Telwoorden":"",
-         "A1 Zelfstandignaamwoord":"",
-         "A2 Dasofdass":"",
-         "A2 Mannofman":"",
-         "A2 Sterkewerkwoordennaarww":"",
+         "A1 Zelfstandig naamwoord":"",
+         "A2 Das of dass":"",
+         "A2 Mann of man":"",
+         "A2 Sterke werkwoorden naar ww":"",
          "A2 Voorzetsels":"",
-         "A2 Werkwoordenmeteenvastenaamvalnaarww":"",
+         "A2 Werkwoorden met een vaste naamval naar ww":"",
          "Naamvallen":"",
          "Werkwoorden":""
       },
       "Hren":{
-         "A1 Hren":"",
-         "A2 Hren":"",
-         "B1 Hren":"",
-         "B2 Hren":"",
-         "C1 C2 Hren":"",
-         "E R K Ziele Hren":"",
-         "Fernsehund Filmtipps":"",
-         "Tippszum Hren":""
+         "A1 Hren":"A1 Hören",
+         "A2 Hren":"A2 Hören",
+         "B1 Hren":"B1 Hören",
+         "B2 Hren":"B2 Hören",
+         "C1 C2 Hren":"C1 C2 Hören",
+         "ERK Ziele Hren":"ERK Ziele Hören",
+         "Fernseh und Filmtipps":"",
+         "Tipps zum Hren":"Tipps zum Hören"
       },
       "Landeskunde":{
-         "Dasdeutsche Schulsystem":"",
-         "Essenund Trinken":""
+         "Das deutsche Schulsystem":"",
+         "Essen und Trinken":""
       },
       "Lesen":{
          "A1 Lesen":"",
@@ -435,7 +382,7 @@ let data = {
          "B1 Lesen":"",
          "B2 Lesen":"",
          "C1 C2 Lesen":"",
-         "E R K Ziele Lesen":""
+         "ERK Ziele Lesen":""
       },
       "Schreiben":{
          "A1 Schreiben":"",
@@ -443,7 +390,7 @@ let data = {
          "B1 Schreiben":"",
          "B2 Schreiben":"",
          "C1 C2 Schreiben":"",
-         "E R K Ziele Schreiben":""
+         "ERK Ziele Schreiben":""
       },
       "Sprechen":{
          "A1 Sprechen":"",
@@ -451,7 +398,7 @@ let data = {
          "B1 Sprechen":"",
          "B2 Sprechen":"",
          "C1 C2 Sprechen":"",
-         "E R K Ziele Sprechen":""
+         "ERK Ziele Sprechen":""
       },
       "Themen Oberstufe":{
          "B1 Themen":"",
@@ -462,7 +409,7 @@ let data = {
          "A2 Themen":""
       },
       "Wahlprogramm Literatur":{
-         "Bll Undsagtekeineinziges Wort":"",
+         "Bll Und sagtekeineinziges Wort":"Böll Und sagte kein einziges Wort",
          "Kafka Die Verwandlung":""
       }
    },
@@ -472,7 +419,7 @@ let data = {
          "E2 Registratie Intertemporele Ruil":""
       },
       "Docus":{
-         "Via You Tube":""
+         "Via YouTube":""
       },
       "Keuzelessenklas6":{
          "Keuzelessen Complexe Opgaven":""
@@ -514,7 +461,7 @@ let data = {
       }
    },
    "Engels":{
-      "L A N G U A G E":{
+      "LANGUAGE":{
          "A1 Language":"",
          "A2 Language":"",
          "B1 Language":"",
@@ -522,32 +469,32 @@ let data = {
          "C1 Language":"",
          "C2 Language":""
       },
-      "L I S T E N I N G":{
+      "LISTENING":{
          "A2 Listening":"",
          "B1 Listening":"",
          "B2 Listening":"",
          "C1 Listening":"",
          "C2 Listening":""
       },
-      "R E A D I N G":{
+      "READING":{
          "A2 Reading":"",
          "B1 Reading":"",
          "B2 Reading":"",
          "C1 Reading":"",
          "C2 Reading":""
       },
-      "S P E A K I N G":{
+      "SPEAKING":{
          "A2 Speaking":"",
          "B1 Speaking":"",
          "C1 Speaking":"",
          "C2 Speaking":"",
-         "Native Speakersessions":""
+         "Native Speaker sessions":""
       },
       "Studiewijzer":{
          "Cambridge English":"",
          "English Higher Level":""
       },
-      "W R I T I N G":{
+      "WRITING":{
          "A2 Writing":"",
          "B1 Writing":"",
          "B2 Writing":"",
@@ -557,35 +504,35 @@ let data = {
    },
    "Filosofie":{
       "Algemeen":{
-         "Degrotefilosofen":""
+         "De grote filosofen":""
       },
       "Basismodule":{
-         "Les1":""
+         "Les 1":""
       },
       "Ethiek":{
          "Basisbegrippen Ethiek":"",
-         "Hetkwaadinons":"",
-         "Hetontstaanvandemoraal":"",
+         "Het kwaad in ons":"",
+         "Het ontstaan van de moraal":"",
          "Hoofdstromen Ethiek":"",
-         "Universeelofrelatief":""
+         "Universeel of relatief":""
       },
       "Examen":{
          "2015 Vrije Wil":""
       },
       "Identiteit":{
-         "1 Jezelfkennen":""
+         "1 Jezelf kennen":""
       },
       "Kennisleer":{
          "Basisbegrippen":"",
-         "Grenzenvanonzekennis":"",
+         "Grenzen van onze kennis":"",
          "Mediafilosofie":"",
-         "Waarheidstheorien":""
+         "Waarheidstheorien":"Waarheidstheorieën"
       },
-      "Techniekfilosofie":{
+      "Techniek filosofie":{
          "Basisbegrippen":"",
-         "Denieuwemens":"",
+         "De nieuwe mens":"",
          "Kunstmatige Intelligentie":"",
-         "Techniekinstrumentofautonomemacht":""
+         "Techniek instrument of autonome macht":""
       },
       "Vaardigheden":{
          "Filmopdracht Denieuwemens":"",
