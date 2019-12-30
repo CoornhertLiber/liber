@@ -800,33 +800,6 @@ let data = {
       "0 Studiewijzers":{ 
          "Studiewijzer Klas5 P2":"Studiewijzers P2"
       },
-      "16 Keuzelessenklas6":{ 
-         "Handigedocumenten":"Werkbladen"
-      },
-      "17 Tipsvoordeboekenlijst":{ 
-         "Tipsvoordeboekenlijst":"Tips voor de boekenlijst"
-      },
-      "19 Dichtbundels":{ 
-         "Met Open Ogen":"Open Ogen",
-         "Parkenen Woestijnen":"Parken en Woestijnen"
-      },
-      "Findesicle":{ 
-         "displayName": "8 Fin de siecle",
-         "Literatuurrond1900":"Literatuur rond 1900"
-      },
-      "Handige sites":{ 
-         "displayName": "15 Handige sites",
-         "Literaireprijzen":"Literaire prijzen",
-         "Literatuursites":""
-      },
-      "Het leesdossier":{ 
-         "displayName": "14 Het mondeling",
-         "Hetleesdossier":"Het mondeling"
-      },
-      "Het lezen van pozie":{ 
-         "displayName": "2 Het lezen van poëzie",
-         "Aspectenvanpozie":"Aspecten van poëzie"
-      },
       "Het lezen van proza":{ 
          "displayName": "1 Het lezen van proza",
          "Begrippen":"",
@@ -835,6 +808,68 @@ let data = {
          "Deliterairerecensie":"De literaire recensie",
          "Genres":"",
          "Verhaalelementen":""
+      },
+      "Het lezen van pozie":{ 
+         "displayName": "2 Het lezen van poëzie",
+         "Aspectenvanpozie":"Aspecten van poëzie"
+      },
+      "Middeleeuwen":{ 
+         "displayName": "3 Middeleeuwen",
+         "Delegende":"2 De legende",
+         "Don Quixote":"8 Don Quixote",
+         "Genresvandeadel":"4 Genres van de adel",
+         "Hetchansondegeste":"3 Het chanson de geste",
+         "Inleiding":"1 Inleiding",
+         "Marikenvan Nieumeghen":"7 Mariken van Nieumeghen",
+         "Synoptischetabel":"9 Synoptische tabel",
+         "Toneelinde Middeleeuwen":"6 Toneel in de Middeleeuwen",
+         "Vandenvos Reynaerde":"5 Van den vos Reynaerde"
+      },
+      "Renaissance":{ 
+         "displayName": "4 Renaissance",
+         "De Goddelijke Komedie":"2 De Goddelijke Komedie",
+         "Inleidinginde Renaissance":"1 Inleiding in de Renaissance",
+         "Sonnettenuitde Renaissance":"3 Sonnetten uit de Renaissance",
+         "Toneeluitde Renaissance":"4 Toneel uit de Renaissance"
+      },
+      "Verlichting":{ 
+         "displayName": "5 Verlichting",
+         "De Verlichting":"1 De Verlichting",
+         "Debriefromanende Libertijnen":"4 De briefroman en de Libertijnen",
+         "Defilosofischevertelling":"3 De filosofische vertelling",
+         "Fabels":"2 Fabels"
+      },
+      "Romantiek":{ 
+         "displayName": "6 Romantiek",
+         "Dedoorbraakvanhetgevoel":"1 De doorbraak van het gevoel",
+         "Dezwarte Romantiek":"3 De zwarte Romantiek",
+         "Eenhalveeeuw Romantiek":"2 Een halve eeuw Romantiek",
+         "Max Havelaar":"4 Max Havelaar",
+         "Romantischeironie":"5 Romantische ironie",
+         "Romantischepozie":"6 Romantische poëzie"
+      },
+      "Realismeen Naturalisme":{ 
+         "displayName": "7 Realisme en Naturalisme",
+         "De Tachtigers":"3 De Tachtigers",
+         "Naturalisme":"2 Naturalisme",
+         "Realisme":"1 Realisme"
+      },
+      "Findesicle":{ 
+         "displayName": "8 Fin de siecle",
+         "Literatuurrond1900":"Literatuur rond 1900"
+      },
+      "Moderne Literatuur19141940":{ 
+         "displayName": "9 Moderne Literatuur (1914 - 1940)",
+         "Moderne Literatuur":"Moderne Literatuur"
+      },
+      "Moderne Literatuur19401970":{ 
+         "displayName": "10 Moderne Literatuur (1940 - 1970)",
+         "Hetexperimentindepozie":"Het experiment in de poëzie",
+         "Literatuurtussen19401970":"Literatuur tussen 1940-1970"
+      },
+      "Moderne Literatuurna1970":{ 
+         "displayName": "11 Moderne Literatuur na 1970",
+         "Het Postmodernisme":"Het Postmodernisme"
       },
       "Keuzemodules klas 5":{ 
          "displayName": "12 Keuzemodules - klas 5",
@@ -852,55 +887,29 @@ let data = {
          "Ikneemjemee":"Ik neem je mee...",
          "Volkspozieenvolksmuziek":"Bernstein at 100"
       },
+      "Het leesdossier":{ 
+         "displayName": "14 Het mondeling",
+         "Hetleesdossier":"Het mondeling"
+      },  
+      "Handige sites":{ 
+         "displayName": "15 Handige sites",
+         "Literaireprijzen":"Literaire prijzen",
+         "Literatuursites":""
+      }, 
+      "16 Keuzelessenklas6":{ 
+         "Handigedocumenten":"Werkbladen"
+      },
+      "17 Tipsvoordeboekenlijst":{ 
+         "Tipsvoordeboekenlijst":"Tips voor de boekenlijst"
+      },
       "Keuzemodulesklas620192020":{ 
+         "displayName": "18 Archief",
          "Archief Boem Paukeslag":"Archief Boem Paukeslag"
       },
-      "Middeleeuwen":{ 
-         "Delegende":"2 De legende",
-         "Don Quixote":"8 Don Quixote",
-         "Genresvandeadel":"4 Genres van de adel",
-         "Hetchansondegeste":"3 Het chanson de geste",
-         "Inleiding":"1 Inleiding",
-         "Marikenvan Nieumeghen":"7 Mariken van Nieumeghen",
-         "Synoptischetabel":"9 Synoptische tabel",
-         "Toneelinde Middeleeuwen":"6 Toneel in de Middeleeuwen",
-         "Vandenvos Reynaerde":"5 Van den vos Reynaerde"
-      },
-      "Moderne Literatuur19141940":{ 
-         "Moderne Literatuur":"Moderne Literatuur"
-      },
-      "Moderne Literatuur19401970":{ 
-         "Hetexperimentindepozie":"Het experiment in de poëzie",
-         "Literatuurtussen19401970":"Literatuur tussen 1940-1970"
-      },
-      "Moderne Literatuurna1970":{ 
-         "Het Postmodernisme":"Het Postmodernisme"
-      },
-      "Realismeen Naturalisme":{ 
-         "De Tachtigers":"3 De Tachtigers",
-         "Naturalisme":"2 Naturalisme",
-         "Realisme":"1 Realisme"
-      },
-      "Renaissance":{ 
-         "De Goddelijke Komedie":"2 De Goddelijke Komedie",
-         "Inleidinginde Renaissance":"1 Inleiding in de Renaissance",
-         "Sonnettenuitde Renaissance":"3 Sonnetten uit de Renaissance",
-         "Toneeluitde Renaissance":"4 Toneel uit de Renaissance"
-      },
-      "Romantiek":{ 
-         "Dedoorbraakvanhetgevoel":"1 De doorbraak van het gevoel",
-         "Dezwarte Romantiek":"3 De zwarte Romantiek",
-         "Eenhalveeeuw Romantiek":"2 Een halve eeuw Romantiek",
-         "Max Havelaar":"4 Max Havelaar",
-         "Romantischeironie":"5 Romantische ironie",
-         "Romantischepozie":"6 Romantische poëzie"
-      },
-      "Verlichting":{ 
-         "De Verlichting":"1 De Verlichting",
-         "Debriefromanende Libertijnen":"4 De briefroman en de Libertijnen",
-         "Defilosofischevertelling":"3 De filosofische vertelling",
-         "Fabels":"2 Fabels"
-      }
+      "19 Dichtbundels":{ 
+         "Met Open Ogen":"Open Ogen",
+         "Parkenen Woestijnen":"Parken en Woestijnen"
+      },  
    },
    "Latijn":{
       "0 Leerdoelenleerlijnenstudiewijzers":{
