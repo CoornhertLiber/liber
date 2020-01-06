@@ -117,13 +117,6 @@ function fillList(input, realNames, funcList) {
                 funcList.childNodes[x].setAttribute("realName", "");
             }
             funcList.childNodes[x].classList = "occupied";
-            if (funcList == moduleList) {
-                var s0 = selected[0].split(" ").join("");
-                var s1 = selected[1].split(" ").join("");
-                var s2 = realNames[x].split(" ").join("");
-                var fin = s0 + "/" + s1 + "/" + s2;
-                funcList.childNodes[x].setAttribute("href", "https://coornhert.sharepoint.com/sites/liber/" + fin);
-            }
         }
         else {
             funcList.childNodes[x].innerText = "";
@@ -160,7 +153,7 @@ window.onload = function() {
                 var item = document.createElement("button");
             }
             else {
-                var item = document.createElement("a");
+                var item = document.createElement("button");
                 item.setAttribute("target", "_blank")
             }
             item.id = classNames[i];
@@ -223,6 +216,15 @@ function test() {
         changeSubject(selected[0], subject);
     }
     else if (this.id == "module") {
-        
+        var s0 = selected[0].split(" ").join("");
+        var s1 = selected[1].split(" ").join("");
+        if (this.getAttribute("realName") == "") {
+            var s2 = this.innerText.split(" ").join("");
+        }
+        else {
+            var s2 = this.getAttribute("realName").split(" ").join("");
+        }
+        var fin = s0 + "/" + s1 + "/" + s2;
+        window.open("https://coornhert.sharepoint.com/sites/liber/" + fin);
     }
 }

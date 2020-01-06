@@ -1,7 +1,7 @@
 .topContainer {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     top: 8vh;
     position: absolute;
 }
@@ -24,6 +24,7 @@
 
 .testList {
     list-style-type: none;
+    padding: 0px;
 }
 
 .empty {
@@ -40,8 +41,8 @@
     margin-top: 1vh;
 
     height: 4.6vh;
-    width: 29vw;
-    left: -2vw;
+    width: 90%;
+    left: 5%;
     position: relative;
 
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
@@ -54,10 +55,6 @@
     text-decoration: none;
 
     outline-style: none;
-}
-
-a.occupied {
-    line-height: em;
 }
 
 .active {

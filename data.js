@@ -57,7 +57,7 @@ let data = {
          "Veenlandschap":"",
          "Zand en rivierklei landschap":""
       },
-      "Lerenvooraardrijkskunde":{
+      "Leren voor aardrijkskunde":{
          "Onderbouw":""
       },
       "Studiewijzers":{
@@ -726,7 +726,7 @@ let data = {
       "Cultuur":{
          "Alexanderde Grote":"",
          "Filosofie":"",
-         "Geschiedenisvan Griekenland":"",
+         "Geschiedenis van Griekenland":"",
          "Griekenland":"",
          "Herodotos":"",
          "Homerus":"",
