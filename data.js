@@ -139,7 +139,7 @@ let data = {
          "monument":"",
          "portret":"",
          "portret modernisme":"",
-         "ruimtelijke 2illusie":""
+         "ruimtelijke illusie":""
       }
    },
    "Biologie":{
