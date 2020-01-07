@@ -1201,7 +1201,7 @@ let data = {
          "Ev6 C Formulesw C":"Ev6C Formules wC",
          "Examensoefenen":"Ev4C: Examens oefenenen"
       },
-      "Functiesen Verbanden":{ 
+      "Functies en Verbanden":{ 
          "4w A C Diagnostische Toets E2":"4wA/C Diagnostische toetsen periode 2",
          "4w A C Diagnostischetoetsenperiode1":"4wA/C Diagnostische toetsen periode 1",
          "A Fv6 Periodiekefuncties":"Fv6: Periodieke functies",
@@ -1313,7 +1313,7 @@ let data = {
          "Ex5 Stappenplannenenformules":"Ex5: Stappenplannen",
          "Ex6 Kennistoets":"Ex6: Formules en Kennistoets"
       },
-      "Functiesen Vergelijkingen":{ 
+      "Functies en Vergelijkingen":{ 
          "4w B Diagnostischetoets E2":"4wB Diagnostische toets E2",
          "Fu10 Herhaling Basisstof":"Fu10: Herhaling Basisstof",
          "Fu11 Logaritmischefuncties":"Fu11: Logaritmische functies",
