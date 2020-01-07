@@ -1,5 +1,13 @@
 function print(args) { console.log(args) }
 
+try {
+    localStorage;
+    platform = "firefox";
+  }
+  catch (error) {
+    platform = "chrome";
+}
+
 var roundedDataSize = [25, 20, 10]
 var selected = ["", ""];
 
@@ -145,6 +153,25 @@ function highlightSelected() {
 
 window.onload = function() {
 
+    if (platform == "firefox") {
+        var rlinks = localStorage.getItem("RetroLiber");
+        try{
+            setTheme(rlinks);
+        }
+        catch (e) { print(e); }
+      }
+      else if (platform == "chrome") {
+        try{
+          var rlinks = chrome.storage.sync.get(["RetroLiber"], setTheme);
+        }
+        catch (error) {}
+      }
+
+    document.getElementById('themeSwitch').addEventListener('change', function(event){
+        (event.target.checked) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
+        save(event.target.checked);
+    });
+
     classNames = ["domain", "subject", "module"]
    
     for (var i = 0; i < 3; i++) {
@@ -227,4 +254,23 @@ function test() {
         var fin = s0 + "/" + s1 + "/" + s2;
         window.open("https://coornhert.sharepoint.com/sites/liber/" + fin);
     }
+}
+
+function save(isDark) {
+    print("test");
+    if (platform == "firefox") {
+        localStorage.setItem("RetroLiber", isDark);
+        print(localStorage.getItem("RetroLiber"));
+    }
+    else if (platform == "chrome") {
+        chrome.storage.sync.set({
+        "RetroLiber": isDark
+        });
+    }
+}
+
+function setTheme(isDark) {
+    document.getElementById('themeSwitch').checked = isDark;
+    print(isDark);
+    (isdark) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
 }
