@@ -106,8 +106,12 @@ function changeSubject(domain, subject) {
 
 function fillList(input, realNames, funcList) {
     var inputLength = input.length;
+    var offset = 0;
     for (var x = 0 ; x < funcList.childNodes.length; x++) {
         if (x < inputLength) {
+            if (realNames[x] == "displayName") {
+                offset = 1;
+            }
             if (input[x] != realNames[x]) {
                 funcList.childNodes[x].innerText = input[x];
                 funcList.childNodes[x].setAttribute("realName", realNames[x]);
@@ -119,7 +123,7 @@ function fillList(input, realNames, funcList) {
             if (funcList == moduleList) {
                 var s0 = selected[0].split(" ").join("");
                 var s1 = selected[1].split(" ").join("");
-                var s2 = realNames[x].split(" ").join("");
+                var s2 = realNames[x + offset].split(" ").join("");
                 var fin = s0 + "/" + s1 + "/" + s2;
                 y = "window.open('https://coornhert.sharepoint.com/sites/liber/" + fin + "')";
             
