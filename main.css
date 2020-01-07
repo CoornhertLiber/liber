@@ -2,6 +2,7 @@
     --color-body: white;
     --color-bg: white;
     --color-button: #cacbcd;
+    --color-button-hover: #999999;
     --color-button-text: black;
     --color-active: #2185d0;
     --color-text: white;
@@ -17,6 +18,7 @@
     --color-body: #181a1b;
     --color-bg: #181a1b;
     --color-button: #272a2b;
+    --color-button-hover: #3e4344;
     --color-button-text: lightgray;
     --color-active: #2185d0;
     --color-text: white;
@@ -31,7 +33,6 @@
 body {
     background-color: var(--color-body);
     scrollbar-color: var(--color-scrollbar-color);
-    scrollbar-
 }
 
 .topContainer {
@@ -91,6 +92,11 @@ body {
     text-decoration: none;
 
     outline-style: none;
+}
+
+.occupied:hover {
+    background-color: var(--color-button-hover);
+    transition: all .05s ease-in-out;
 }
 
 .active {
