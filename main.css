@@ -7,7 +7,7 @@
     --color-text: white;
     --color-title-text: black;
     --color-border: rgba(13, 13, 14, 0.15);
-    --color-shadow: #0D0D0E;
+    --color-shadow: #858593;
     --color-todo-bg: #f2f3f5;
     --color-todo-border: rgba(34,36,38,.15);
     --color-scrollbar-color: #7e8182 #cecece;
@@ -100,7 +100,7 @@ body {
 
 .seperator {
     float: left;
-    width: .5vw;
+    width: .3vw;
     height: 90vh;
     background-color: gray;
     border-radius: 1em;
