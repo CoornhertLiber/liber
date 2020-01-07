@@ -116,6 +116,15 @@ function fillList(input, realNames, funcList) {
                 funcList.childNodes[x].innerText = input[x];
                 funcList.childNodes[x].setAttribute("realName", "");
             }
+            if (funcList == moduleList) {
+                var s0 = selected[0].split(" ").join("");
+                var s1 = selected[1].split(" ").join("");
+                var s2 = realNames[x].split(" ").join("");
+                var fin = s0 + "/" + s1 + "/" + s2;
+                y = "window.open('https://coornhert.sharepoint.com/sites/liber/" + fin + "')";
+            
+                funcList.childNodes[x].setAttribute("onclick", y);
+            }
             funcList.childNodes[x].classList = "occupied";
         }
         else {
@@ -227,17 +236,7 @@ function test() {
         changeSubject(selected[0], subject);
     }
     else if (this.id == "module") {
-        var s0 = selected[0].split(" ").join("");
-        var s1 = selected[1].split(" ").join("");
-        if (this.getAttribute("realName") == "") {
-            var s2 = this.innerText.split(" ").join("");
-        }
-        else {
-            var s2 = this.getAttribute("realName").split(" ").join("");
-        }
-        var fin = s0 + "/" + s1 + "/" + s2;
-        window.open("https://coornhert.sharepoint.com/sites/liber/" + fin);
-    }
+       }
 }
 
 function save(isDark) {

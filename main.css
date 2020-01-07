@@ -92,6 +92,8 @@ body {
     text-decoration: none;
 
     outline-style: none;
+
+    cursor: pointer;
 }
 
 .occupied:hover {
