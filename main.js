@@ -1,13 +1,5 @@
 function print(args) { console.log(args) }
 
-try {
-    localStorage;
-    platform = "firefox";
-  }
-  catch (error) {
-    platform = "chrome";
-}
-
 var roundedDataSize = [25, 20, 10]
 var selected = ["", ""];
 
@@ -153,19 +145,11 @@ function highlightSelected() {
 
 window.onload = function() {
 
-    if (platform == "firefox") {
-        var rlinks = localStorage.getItem("RetroLiber");
-        try{
-            setTheme(rlinks);
-        }
-        catch (e) { print(e); }
-      }
-      else if (platform == "chrome") {
-        try{
-          var rlinks = chrome.storage.sync.get(["RetroLiber"], setTheme);
-        }
-        catch (error) {}
-      }
+    var rlinks = localStorage.getItem("RetroLiber");
+    try {
+        setTheme(rlinks);
+    }
+    catch (e) { print(e); }
 
     document.getElementById('themeSwitch').addEventListener('change', function(event){
         (event.target.checked) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
@@ -257,20 +241,11 @@ function test() {
 }
 
 function save(isDark) {
-    print("test");
-    if (platform == "firefox") {
-        localStorage.setItem("RetroLiber", isDark);
-        print(localStorage.getItem("RetroLiber"));
-    }
-    else if (platform == "chrome") {
-        chrome.storage.sync.set({
-        "RetroLiber": isDark
-        });
-    }
+    localStorage.setItem("RetroLiber", isDark);
 }
 
 function setTheme(isDark) {
+    isDark = (isDark == "true");
     document.getElementById('themeSwitch').checked = isDark;
-    print(isDark);
-    (isdark) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
+    isDark ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
 }
