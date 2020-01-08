@@ -1288,14 +1288,16 @@ let data = {
    "Wiskunde B Nieuwe Progamma":{
       "displayName": "Wiskunde B Nieuwe Programma",
       "0 Studiewijzers45en6w B":{ 
+         "displayName": "0 Studiewijzers 4 5 en 6",
          "Studieiwijzer5w B20192020":"Studiewijzer 5wB 2019-2020",
          "Studiewijzer4w B20192020":"Studiewijzer 4wB 2019-2020",
          "Studiewijzer6w B20192020":"Studiewijzer 6wB 2019-2020"
       },
-      "0 Tipsvoorhetlerenenmakenvanrepetities":{ 
+      "0 Tips voor het leren en maken van repetities":{ 
          "Tipsvoorhetlerenenmakenvanrepetities":"Hoe leer je wiskunde en andere exacte vakken?"
       },
       "Differentirenen Integreren":{ 
+         "displayName": "Differentiëren en Integreren",
          "4w B Diagnostischetoets E3":"4wB Diagnostische toets E3",
          "5w B Diagnostischetoets E2":"5wB Diagnostische toets E2",
          "5w B Diagnostischetoets E3":"5wB Diagnostische toets E3",
