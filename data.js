@@ -1365,7 +1365,7 @@ let data = {
       }
    },
    "Wiskunde D":{
-      "0 Studiewijzer 56w D":{
+      "0 Studiewijzer 5 6 w D":{
          "":""
       },
       "1a Statistiek":{
