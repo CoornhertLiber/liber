@@ -1380,7 +1380,7 @@ let data = {
       "2b Lineaire algebra en ruitmemeetkunde":{
          "":""
       },
-      "3aeigenkeuzeonderwerp":{
+      "3a eigenkeuzeonderwerp":{
          "":""
       },
       "3b dynamisch modelleren en differentiaal vergelijkingen":{

@@ -81,4 +81,6 @@ By this time i had already created a data structure for the site, which looks as
 }
 ```
 
-The rest of the documentation will follow.
+I then wrote some python scripts to extract the necessary data and parse it. I started out by just grabbing the `webUrl` field and compiling them into a list. I then generate a nested `dictionary` (read: `key-value pairs`). This marked V1 of the dataset. I then started work on the UI. We'll get back to this later.
+
+## The UI
