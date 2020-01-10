@@ -1317,8 +1317,6 @@ let data = {
       },
       "Functies en Vergelijkingen":{ 
          "4w B Diagnostischetoets E2":"4wB Diagnostische toets E2",
-         "Fu10 Herhaling Basisstof":"Fu10: Herhaling Basisstof",
-         "Fu11 Logaritmischefuncties":"Fu11: Logaritmische functies",
          "Fu1 Eerstegraads Functies":"Fu4 Ongelijkheden",
          "Fu2 Tweedegraadsfuncties":"Fu2: Tweedegraads functies",
          "Fu3 Gebrokenfunctiesenwortelfuncties":"Fu3: Gebroken functies en wortelfuncties",
@@ -1328,6 +1326,8 @@ let data = {
          "Fu7 Machtsfunctiesenpolynomen":"Fu7: Machtsfuncties en polynomen",
          "Fu8 Vergelijkingenen Algebra":"Fu8: Vergelijkingen en Algebra",
          "Fu9 Symmetrie Bewijzen":"Fu9: Symmetrie Bewijzen",
+         "Fu10 Herhaling Basisstof":"Fu10: Herhaling Basisstof",
+         "Fu11 Logaritmischefuncties":"Fu11: Logaritmische functies",
          "Transformaties":"Fu12: Asymptotisch gedrag bij gebroken functies"
       },
       "Goniometrie":{ 
