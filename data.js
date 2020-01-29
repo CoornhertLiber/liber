@@ -698,7 +698,6 @@ let data = {
          "W O2opvijfcontinenten":"WO2 op vijf continenten"
       },
       "Tien Tijdvakken bovenbouw":{ 
-         "Tijdvak10 Televisieen Computer":"Tijdvak 10: Televisie en Computer",
          "Tijdvak1 Jagersen Boeren":"Tijdvak 1: Jagers en Boeren",
          "Tijdvak2 Griekenen Romeinen":"Tijdvak 2: Grieken en Romeinen",
          "Tijdvak3 Monnikenen Ridders":"Tijdvak 3: Monniken en Ridders",
@@ -707,10 +706,10 @@ let data = {
          "Tijdvak6 Regentenen Vorsten":"Tijdvak 6: Regenten en Vorsten",
          "Tijdvak7 Pruikenen Revolutie":"Tijdvak 7: Pruiken en Revolutie",
          "Tijdvak8 Burgersen Stoommachines":"Tijdvak 8: Burgers en Stoommachines",
-         "Tijdvak9 Wereldoorlogen B B":"Tijdvak 9: Wereldoorlogen"
+         "Tijdvak9 Wereldoorlogen B B":"Tijdvak 9: Wereldoorlogen",
+         "Tijdvak10 Televisieen Computer":"Tijdvak 10: Televisie en Computer",
       },
       "Tien Tijdvakken onderbouw":{ 
-         "Tijdvak10 Televisie Computer":"Tijdvak 10: Televisie & Computer",
          "Tijdvak1 Jagers Boeren":"Tijdvak 1: Jagers & Boeren",
          "Tijdvak2 Grieken Romeinen":"Tijdvak 2: Grieken & Romeinen",
          "Tijdvak3 Monniken Ridders":"Tijdvak 3: Monniken & Ridders",
@@ -719,7 +718,8 @@ let data = {
          "Tijdvak6 Regenten Vorsten":"Tijdvak 6: Regenten & Vorsten",
          "Tijdvak7 Pruiken Revoluties":"Tijdvak 7: Pruiken & Revoluties",
          "Tijdvak8 Burgersamp Stoommachines":"Tijdvak 8: Burgers & Stoommachines",
-         "Tijdvak9 Wereldoorlogen O B":"Tijdvak 9: Wereldoorlogen"
+         "Tijdvak9 Wereldoorlogen O B":"Tijdvak 9: Wereldoorlogen",
+         "Tijdvak10 Televisie Computer":"Tijdvak 10: Televisie & Computer",
       }
    },
    "Grieks":{
@@ -1317,10 +1317,10 @@ let data = {
       },
       "Functies en Vergelijkingen":{ 
          "4w B Diagnostischetoets E2":"4wB Diagnostische toets E2",
-         "Fu1 Eerstegraads Functies":"Fu4 Ongelijkheden",
+         "Fu4 Ongelijkheden":"Fu1 Eerstegraads functies",
          "Fu2 Tweedegraadsfuncties":"Fu2: Tweedegraads functies",
          "Fu3 Gebrokenfunctiesenwortelfuncties":"Fu3: Gebroken functies en wortelfuncties",
-         "Fu4 Ongelijkheden":"Fu1 Eerstegraads functies",
+         "Fu1 Eerstegraads Functies":"Fu4 Ongelijkheden",
          "Fu5 Exponentilefuncties":"Fu5: Exponentiële functies",
          "Fu6 Formulesengrafiekeninterpreteren":"Fu6: Formules en grafieken interpreteren",
          "Fu7 Machtsfunctiesenpolynomen":"Fu7: Machtsfuncties en polynomen",
