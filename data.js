@@ -345,7 +345,7 @@ let data = {
          },
          "Deutschlesenfr L I C":{ 
             "displayName": "Deutsch lesen fur LIC",
-            "Bchertipps Deutsch":"Bücchertipps Deutsch"
+            "Bchertipps Deutsch":"Büchertipps Deutsch"
          },
          "Grammatik Oberstufe B1 B2":{ 
             "Naamvallen":"",
