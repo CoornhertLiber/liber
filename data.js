@@ -427,18 +427,18 @@ let data = {
       "Docus":{
          "Via YouTube":""
       },
-      "Keuzelessenklas6":{
+      "Keuzelessen klas 6":{
          "Keuzelessen Complexe Opgaven":""
       },
-      "Klas3":{
+      "Klas 3":{
          "Heteconomischerollenspel":"",
          "Kennismaking":""
       },
-      "Klas6":{
+      "Klas 6":{
          "Antwoorden De Kern":"",
          "Dekernvandeeconomie":""
       },
-      "Overheidencollectievesector":{
+      "Overheid en collectieve sector":{
          "D11 Vraag Aanboden Prijs":"",
          "D12 Elasticiteiten":"",
          "D13 Kosten":"",
@@ -446,7 +446,7 @@ let data = {
          "D15 Surplusbenadering":"",
          "D16 Overheidsingrijpen":""
       },
-      "Practischeopdrachtenenexperimenten":{
+      "Practische opdrachten en experimenten":{
          "24 Prijsdiscriminatie":"",
          "D21 Marktvormen":"",
          "D22 Doelstellingen":"",
@@ -459,7 +459,7 @@ let data = {
          "Klas5":"",
          "Klas6":""
       },
-      "macroeconomischemodellen":{
+      "macroeconomische modellen":{
          "Masterclass Beleggen":"",
          "Masterclass Coursera":"",
          "Masterclass Ondernemen":"",
