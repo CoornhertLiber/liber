@@ -48,6 +48,8 @@ topContainer.appendChild(sep2);
 topContainer.appendChild(moduleContainer);
 let sep3 = document.createElement("div");
 
+print("Get out of my console!");
+
 function changeDomain(domain) {
     var subjects = [];
     for (item in data[domain]) {
@@ -61,7 +63,7 @@ function changeDomain(domain) {
     }
     
     fillList(displayNames, subjects, subjectList);
-    print(subjects);
+    //print(subjects);
 
     selected[0] = domain;
 
