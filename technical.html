@@ -1,0 +1,91 @@
+<h1 id="retrolibertechnicaldetails">RetroLiber Technical Details</h1>
+
+<h2 id="1generalinformation">1. General Information</h2>
+
+<p>Liber 2.0 (hereafter just Liber) is just a really fancy "Document Library". A Document Library is a term used by Sharepoint, and is essentially analogous to a folder structure.</p>
+
+<h4 id="notethefollowingexplanationisconstructedfromknowledgeigainedplayingaroundwiththegraphapiitmaynotbe100accurateandservesonlyasabasicexplanation">Note: the following explanation is constructed from knowledge I gained playing around with the Graph API. It may not be 100% accurate, and serves only as a basic explanation.</h4>
+
+<p>I should also preface this by saying that this whole project took multiple days to complete, because of the nature of Sharepoint and the permissions my account has. Sharepoint aims to make it as simple as possible for end users to use their site, but in doing so, they remove a lot of usefull information from the site when you're not on an admin account. This means I had to essentially build up a model of how Sharepoint works from only the web interface and the lacking documentation there is online. A lot of the important breakthroughs in this project were by sheer luck of finding a URL that could help me progress. A good example of this is the page "<em>https://coornhert-my.sharepoint.com/personal/documentbeheer_coornhert-gymnasium_nl/LIBER</em>". If we go up one directory to "<em>/personal/documentbeheer_coornhert-gymnasium_nl</em>" we see just a single folder called "<em>Coornhert</em>". This is the folder housing all the student-facing documents. However, you might have noticed that the "<em>LIBER</em>" folder is nowhere to be seen. That is because it is <strong><em>hidden from normal users</em></strong>. School has made various <em>crucial folder completely invisible to student accounts</em>.</p>
+
+<p>/rant</p>
+
+<p>There are three versions or components to a library:</p>
+
+<ol>
+<li>Source version</li>
+
+<li>Build version</li>
+
+<li>Web version</li>
+</ol>
+
+<p>The <strong>source</strong> version is just how you would lay out your documents on a regular filesystem. It is comprised of folder and files.</p>
+
+<p>The <strong>build</strong> version in analogous to an xml document explaining the source version. The files are replaced with links to a seperate storage location. This storage location actually just the personal OneDrive account of a user by the name of "<em>documentbeheer_coornhert-gymnasium_nl</em>". <strong>In fact, this is the exact same account you access when you go to Sharepoint -> OneDrive School</strong></p>
+
+<p>The <strong>web</strong> version, then, is the version <em>you</em> as an end user see. This is where Liber differs from a "normal" library. What it does is instead of giving you a list of all subdirectories of a directory (as is seen when visiting the OneDrive School tile), it overwrites that page with a page called <em>/SitePages/Introductiepagina.aspx</em>. This page is what you see when you click on a subject. </p>
+
+<h2 id="2dataacquisition">2. Data Acquisition</h2>
+
+<p>Normally extracting data from a library would be relatively simple: you just make an authenticated request to sharepoint and ask for a listing of all directories. </p>
+
+<p>School, in their infinite wisdom, however, decided that was too easy. Student accounts do not have permission to access the Sharepoint API directly, and because the index pages of Liber are overwritten from the default, you can't simply download a single page and then parse it with an existing Sharepoint parses.</p>
+
+<p>From here there are several options:</p>
+
+<h3 id="1manuallyrebuildtheentirething">1. Manually rebuild the entire thing</h3>
+
+<p>This option was essentially null from the start, since i didn't want to spend all the effort. Later it would turn out that Liber consists of more than ~300 pages, so it was good that I didn't do this manually.</p>
+
+<h3 id="2recursivelydownloadpagesfromaheadlesschromebrowser">2. Recursively download pages from a headless Chrome browser</h3>
+
+<p>The idea here was to start at the home page of liber ("/sites/liber/SitePages/IntroductiePagina"). We then filter out all of the links we want, namely all the subjects, and click on all of them. We of course keep track of which links we've clicked. Then on every single one of those new pages, we do the same thing: find the links we want, and click on them. We do this recursively until we're 3 layers deep. At this point we've reached the maximum depth Liber offers, and we have accessed all the links. </p>
+
+<p>In theory, this option would have worked. However, there are many options that made this less than viable. First of all: I had no experience in working with headless Chrome, or controlling it. Secondly, there would have been a good chance my IP would get timed out or even blacklisted after a while, since we're making > 300 calls as fast as we can. Lastly, due to the structure of <em>IntroductiePagina.aspx</em> it was quite difficult to parse <em>just</em> the links we wanted.</p>
+
+<h3 id="3themicrosoftgraphapi">3. The Microsoft Graph API</h3>
+
+<p>So after all these failed attempts i stumbled across something called the <em>Microsoft Graph API</em>. This API is essentially the holy grail of everything Sharepoint. It can interact with everything in your Sharepoint account, and can do everything and more that you can do from the web interface. </p>
+
+<p>So my first thought here was to see if I could just ask Graph for the directory listings of Liber. As it turns out however, I did not have permission to do that. <strong>I did not have permission to ask for a directory listing of a public account.</strong> My best guess as to why this is, is because the "<em>IntroductiePagina.aspx</em>" has its directory listing baked, as opposed to the normal version which has to use the Graph API to build its page. My guess is that since this option went unused, they just decided to turn it off.</p>
+
+<p>My next discovery was the endpoint "<strong>v1.0/sites?search</strong>". This endpoint allows you to search for anything accesible to your Sharepoint account. Because we can search for items on Liber, I was hopeful. And <strong>indeed</strong>, searching for "/sites/liber" resulted in 1610 lines of glorious Liber items. Inspecting the JSON it turns out that there was a maximum number of items Graph would return. Narrowing down the search to "liber/SUBJECT" worked out fine.</p>
+
+<p>I then proceeded to download the data for all subjects individually and put it into seperate files. I had now finally acquired all the data Liber had, and I was ready to start compiling it into a useable format.</p>
+
+<h2 id="convertingthedata">Converting the data</h2>
+
+<p>Now that I had all the data I needed, i started working on compiling it. The JSON from the API looked as follows:</p>
+
+<pre><code>"value": [
+    {
+        "createdDateTime": "2016-04-13T08:01:04Z",
+        "id": "coornhert.sharepoint.com,[REDACTED-ID],[REDACTED-ID]",
+        "lastModifiedDateTime": "2018-12-21T14:03:09Z",
+        "name": "liber",
+        "webUrl": "https://coornhert.sharepoint.com/sites/liber",
+        "displayName": "Liber",
+        "root": {},
+        "siteCollection": {
+            "hostname": "coornhert.sharepoint.com"
+        }
+    }
+]
+</code></pre>
+
+<p>By this time i had already created a data structure for the site, which looks as follows:</p>
+
+<pre><code>"DOMAIN": {
+    "SUBJECT1": {
+        "MODULE1": "link",
+        "MODULE2": "link"
+    }
+    "SUBJECT2": {
+        "MODULE1": "link",
+        "MODULE2": "link"
+    }
+}
+</code></pre>
+
+<p>The rest of the documentation will follow.</p>

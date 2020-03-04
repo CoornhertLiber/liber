@@ -1,0 +1,219 @@
+:root {
+    --color-body: white;
+    --color-bg: white;
+    --color-button: #cacbcd;
+    --color-button-hover: #999999;
+    --color-button-text: black;
+    --color-active: #2185d0;
+    --color-text: white;
+    --color-title-text: black;
+    --color-border: rgba(13, 13, 14, 0.15);
+    --color-shadow: #858593;
+    --color-todo-bg: #f2f3f5;
+    --color-todo-border: rgba(34,36,38,.15);
+    --color-scrollbar-color: #7e8182 #cecece;
+}
+
+[data-theme="dark"] {
+    --color-body: #181a1b;
+    --color-bg: #181a1b;
+    --color-button: #272a2b;
+    --color-button-hover: #3e4344;
+    --color-button-text: lightgray;
+    --color-active: #2185d0;
+    --color-text: white;
+    --color-title-text: white;
+    --color-border: #616168;
+    --color-shadow: #0D0E0E;
+    --color-todo-bg: rgb(28, 30, 31);
+    --color-todo-border: rgb(37, 40, 41);
+    --color-scrollbar-color: #2a2c2e #1c1e1f;
+}
+
+body {
+    background-color: var(--color-body);
+    scrollbar-color: var(--color-scrollbar-color);
+}
+
+.topContainer {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    top: 8vh;
+    position: absolute;
+}
+
+.testContainer {
+    float: left;
+    width: 31vw;
+    height: 90vh;
+
+    margin-right: .5vw;
+    margin-left: .5vw;
+    background-color: var(--color-bg);
+    border-radius: 1em;
+
+    box-shadow: 0 4px 8px 0 var(--color-shadow);
+    border: 2px solid var(--color-border);
+
+    overflow-y: auto;
+}
+
+.testList {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.empty {
+    display: none;
+}
+
+.occupied {
+    display: block;
+    background-color: var(--color-button);
+    border: none;
+    color: var(--color-button-text);
+    
+    border-radius: .5em;
+    margin-top: 1vh;
+
+    height: 4.6vh;
+    width: 90%;
+    left: 5%;
+    position: relative;
+
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+
+    outline-style: none;
+
+    cursor: pointer;
+}
+
+.occupied:hover {
+    background-color: var(--color-button-hover);
+    transition: all .05s ease-in-out;
+}
+
+.active {
+    background-color: var(--color-active) !important;
+    color: var(--color-text);
+}
+
+.seperator {
+    float: left;
+    width: .3vw;
+    height: 90vh;
+    background-color: gray;
+    border-radius: 1em;
+}
+
+*::-moz-focus-inner {
+    outline: none;
+    border:none;
+}
+
+*::-moz-focus-outer {
+    outline: none;
+    border: none;
+}
+
+.todo {
+    background-color: var(--color-todo-bg);
+    color: var(--color-title-text);
+    border-radius: .5em;
+    border: 2px solid var(--color-todo-border);
+    height: 5vh;
+
+    float: left;
+    position: relative;
+    left: 1vw;
+    top: 1vh;
+
+    padding-left: .7vw;
+    padding-right: .7vw;
+
+    line-height: 2.2em;
+}
+
+.titleCard {
+    float: left;
+    font-size: 2.5em;
+    color: var(--color-title-text);
+}
+
+.titleContainer {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    top: .5vh;
+    left: 2vw;
+}
+
+.switch {
+    position: relative;
+    top: 10px;
+    right: 20px;
+    width: 50px;
+    height: 24px;
+    float: right;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 34px;
+    display: inline;
+
+    overflow-x: auto;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 50%;
+    display: inline;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
