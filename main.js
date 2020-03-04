@@ -1,6 +1,6 @@
 function print(args) { console.log(args) }
 
-var roundedDataSize = [25, 25, 25]
+var roundedDataSize = [30, 25, 25]
 var selected = ["", ""];
 
 let topContainer = document.createElement("ul");
