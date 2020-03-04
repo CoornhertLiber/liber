@@ -807,6 +807,7 @@ let data = {
       "Het lezen van proza":{ 
          "displayName": "1 Het lezen van proza",
          "Begrippen":"",
+         "Campert":"",
          "D W D D Opdracht":"DWDD-Opdracht",
          "Deleesniveaus":"De leesniveaus",
          "Deliterairerecensie":"De literaire recensie",
