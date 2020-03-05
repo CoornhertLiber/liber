@@ -146,7 +146,7 @@ body {
 .titleCard {
     position: absolute;
     text-align: center;
-    width: 100%;
+    width: 93%;
     top: 5px;
     font-size: 2.5em;
     color: var(--color-title-text);
