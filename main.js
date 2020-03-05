@@ -260,7 +260,7 @@ window.onload = function() {
         }
     };
 
-    toggleNav();
+    //toggleNav();
 
 }
 

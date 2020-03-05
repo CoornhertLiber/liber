@@ -220,8 +220,7 @@ input:checked + .slider:before {
     left: 0;
     background-color: var(--color-bg);
     overflow-x: hidden;
-    transition: 0.0s;
-    padding-top: 60px;
+    transition: 0.5s;
     text-align:center;
     z-index: 100;
 }

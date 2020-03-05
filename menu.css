@@ -32,17 +32,18 @@
 
 body {
     background-color: var(--color-bg);
-    overflow-x: hidden !important;
-    margin-right: auto;    
-    margin-left: auto; 
-    max-width: 100%;    
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
     min-width: 1000px;
 }
 
 .usable {
     background-color: #444;
     width: 100%;
-    height: 91%;
+    height: 100%;
+    top: 0px;
+    position: absolute;
 }
 
 .bottomBar {
@@ -50,12 +51,22 @@ body {
     position: absolute;
     width: 99%;
     height: 10%;
-    bottom: 9%;
+    bottom: 0%;
     border: 1px solid red;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    min-width: 200px;
 }
 
 ul {
     list-style: none;
+    position: relative;
+    top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    min-width: 1000px;
 }
 
 .linkIcon {
@@ -83,6 +94,7 @@ ul {
     margin-top: 9px;
     background-color: var(--color-text);
     display: inline-block;
+    border-radius: 50%;
 }
 
 .userName {
@@ -95,8 +107,8 @@ ul {
 .logoutButton {
     font-size: 2.5em !important;
     color: var(--color-text);
-    position: relative;
-    right: -30%;
+    position: absolute;
+    right: 3%;
     bottom: 10%;
     display: inline-block;
 }
