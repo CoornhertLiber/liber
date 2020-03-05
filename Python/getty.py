@@ -11,9 +11,8 @@ subjects = ["Aardrijkskunde", "Biologie", "BiologieOB", "Bronnenonderzoek", "BV"
 "Grieks", "HPG", "KCV", "Latijn", "LIC", "LO", "Maatschappijleer", "Mentoraat", "Natuurkunde", 
 "Nederlands", "NLT", "OnderzoekenenOntwerpen", "Profielwerkstuk", "Scheikunde", "Studievaardigheden", 
 "Taalles", "TechnischOntwerpen", "WiskundeAC", "WiskundeBNieuweProgamma", "WiskundeD", "WiskundeOnderbouw"]
-subjects = ["TechnischOntwerpen", "WiskundeAC", "WiskundeBNieuweProgamma", "WiskundeD", "WiskundeOnderbouw"]
-
-special_cases = {"TechnischOnterwerpen": "Technisch", "WiskundeOnderbouw": "Wiskunde+Onderbouw", "WiskundeAC": "Wiskunde+A", "WiskundeBNieuweProgamma": "Wiskunde+B", "WiskundeD": "Wiskunde+D"}
+subjects = ["TechnischOntwerpen"]
+special_cases = {"TechnischOntwerpen": "Technisch", "WiskundeOnderbouw": "Wiskunde+Onderbouw", "WiskundeAC": "Wiskunde+Ac", "WiskundeBNieuweProgamma": "Wiskunde+B", "WiskundeD": "Wiskunde+D"}
 
 domain = "https://graph.microsoft.com/v1.0/"
 endpoint = "sites?search="

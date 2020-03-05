@@ -1,9 +1,24 @@
+import pprint
 import json
 
-with open("test.json", "r") as f:
-    data = json.loads(f.read())
+pp = pprint.PrettyPrinter(indent=0)
 
-with open("links", "w+") as f:
-    for x in data["value"]:
-        f.write(x["webUrl"].replace("https://coornhert.sharepoint.com", "") + "\n")
-        f.write(x["displayName"] + "\n")
+data = {
+    "2": {
+        "displayName": "test",
+        "b": {
+            "zasd": "1",
+            "sa": "2",
+            "displayName": "b1"
+        },
+        "a": {
+            "qwrq": "3",
+            "dfasd": "4",
+            "displayName": "a1"
+        }
+    }
+}
+x = pp.pformat(data)
+x = x.replace("\'", "\"")
+res = json.loads(x)
+print(res)

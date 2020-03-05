@@ -1,7 +1,8 @@
 import pprint
 import json
+import collections
 
-pp = pprint.PrettyPrinter(indent=4)
+pp = pprint.PrettyPrinter(indent=0, width=1)
 
 def camel_to_underscore(name):
     if len(name) > 0:
@@ -17,6 +18,10 @@ domains = ["Aardrijkskunde", "Biologie", "Bronnenonderzoek", "BV",
 "Taalles", "TechnischOntwerpen", "WiskundeAC", "WiskundeBNieuweProgamma", "WiskundeD", "WiskundeOnderbouw"]
 
 #domains = ["WiskundeD"]
+
+nameLUT = {"BiologieOB": "Biologie OB", "NederlandsOB": "Nederlands", "WiskundeAC": "Wiskunde AC", 
+"WiskundeBNieuweProgramma": "Wiskunde B", "WiskundeD": "Wiskunde D", "WiskundeOnderbouw": "Wiskunde Onderbouw",
+"TechnischOntwerpen": "Technisch Ontwerpen"}
 
 allData = {}
 
@@ -48,7 +53,7 @@ for domainName in domains:
                     continue
             
             if dataType == "domain":
-                allData[path] = {"displayName": displayName}
+                allData[path] = {"displayName": domain}
             
             elif dataType == "subject":
                 path = path.split("/")[1]
@@ -68,10 +73,13 @@ for domainName in domains:
                     allData[domain][pathSplit[0]] = {}
                     allData[domain][pathSplit[0]][pathSplit[1]] = displayName
 
-        #pp.pprint(allData)
+                allData[domain][pathSplit[0]] = json.loads(json.dumps(collections.OrderedDict(sorted(allData[domain][pathSplit[0]].items()))))
 
+    allData[domain] = json.loads(json.dumps(collections.OrderedDict(sorted(allData[domain].items()))))
 
-#res = sorted(allData.items(), key = lambda x: x[1]['displayName']) 
+for domain in allData.keys():
+    if domain in nameLUT:
+        allData[domain]["displayName"] = nameLUT[domain]
 
-with open("compiled/data", "w+") as f:
-    f.write(str(allData))
+with open("../data.js", "w+")as f:
+    f.write("let data = " + str(dict(allData)))
