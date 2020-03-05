@@ -28,13 +28,6 @@ domainList.classList += "testList";
 subjectList.classList += "testList";
 moduleList.classList += "testList";
 
-/*
-domainContainer.style.backgroundColor = "red";
-subjectContainer.style.backgroundColor = "green";
-moduleContainer.style.backgroundColor = "blue";
-linkContainer.style.backgroundColor = "gray";
-*/
-
 topContainer.appendChild(domainContainer);
 let sep1 = document.createElement("div");
 sep1.classList = "seperator";
@@ -47,6 +40,8 @@ topContainer.appendChild(sep2);
 
 topContainer.appendChild(moduleContainer);
 let sep3 = document.createElement("div");
+
+let navEnabled = false;
 
 print("Get out of my console!");
 
@@ -157,6 +152,12 @@ function highlightSelected() {
     }
 }
 
+function toggleNav() {
+    navEnabled = !navEnabled;
+    if (navEnabled) { document.getElementById("mySidenav").style.width = "100%"; }
+    else { document.getElementById("mySidenav").style.width = "0%"; }
+}
+
 
 window.onload = function() {
 
@@ -218,6 +219,15 @@ window.onload = function() {
     }
     domDataContainer = document.getElementById("dataContainer");
     domDataContainer.appendChild(topContainer);
+
+
+    document.onkeydown = function (e) {
+        e = e || window.event;;
+        if (e.keyCode == 27 && navEnabled) {
+            toggleNav();
+        }
+    };
+
 }
 
 function test() {

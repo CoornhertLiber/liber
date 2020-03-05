@@ -146,7 +146,7 @@ body {
 .titleCard {
     position: absolute;
     text-align: center;
-    width: 93%;
+    left: 40.5%;
     top: 5px;
     font-size: 2.5em;
     color: var(--color-title-text);
@@ -223,6 +223,7 @@ input:checked + .slider:before {
     transition: 0.5s;
     padding-top: 60px;
     text-align:center;
+    z-index: 100;
 }
   
 .sidenav a {
@@ -250,4 +251,33 @@ input:checked + .slider:before {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+.closebtn {
+    cursor: pointer;
+}
+
+.navButton {
+    font-size:20px;
+    cursor:pointer;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-bg);
+    border: none;
+    margin-left: 5px;
+}
+
+.line {
+    background-color: var(--color-title-text);
+    height: 5px;
+    width: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.navBg {
+    background-color: none;
+    width: 30px;
+    height: 30px;
+    margin-top: -30px;
 }

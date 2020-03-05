@@ -12,32 +12,27 @@
     <body>
 
         <div id="mySidenav" class="sidenav">
-          <a class="closebtn" onclick="closeNav()">&times;</a>
+          <a class="closebtn" onclick="toggleNav()">&times;</a>
           <a href="#">About</a>
           <a href="#">Services</a>
           <a href="#">Clients</a>
           <a href="#">Contact</a>
         </div>
+        <div id="titleBar">
+          <button class="navButton" id="navButton" onclick="toggleNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="navBg"></div>
+          </button>
+          
+          <div class="titleCard">RetroLiber</div>
 
-        <h2>Animated Sidenav Example Full Width</h2>
-        <p>Click on the element below to open the navigation menu.</p>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-        <script>
-            function openNav() {
-              document.getElementById("mySidenav").style.width = "100%";
-            }
-
-            function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
-        
-        <div class="titleCard"> RetroLiber </div>
-        <label class="switch">
-            <input type="checkbox" id="themeSwitch">
-            <span class="slider"></span>
-        </label>
+          <label class="switch">
+              <input type="checkbox" id="themeSwitch">
+              <span class="slider"></span>
+          </label>
+        </div>
         <div id="dataContainer"><div>
               
     </body>
