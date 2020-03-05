@@ -20,7 +20,7 @@ domains = ["Aardrijkskunde", "Biologie", "Bronnenonderzoek", "BV",
 #domains = ["WiskundeD"]
 
 nameLUT = {"BiologieOB": "Biologie OB", "NederlandsOB": "Nederlands", "WiskundeAC": "Wiskunde AC", 
-"WiskundeBNieuweProgramma": "Wiskunde B", "WiskundeD": "Wiskunde D", "WiskundeOnderbouw": "Wiskunde Onderbouw",
+"WiskundeBNieuweProgamma": "Wiskunde B", "WiskundeD": "Wiskunde D", "WiskundeOnderbouw": "Wiskunde Onderbouw",
 "TechnischOntwerpen": "Technisch Ontwerpen"}
 
 allData = {}
