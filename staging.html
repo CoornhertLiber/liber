@@ -5,13 +5,47 @@
         <link rel="stylesheet" type="text/css" href="main.css">
         <script type="text/javascript" src="data.js"></script>
         <script type="text/javascript" src="main.js"></script>
-        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="menu.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
         <title>RetroLiber</title>
         <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     </head>
     <body>
 
-        <object id="mySidenav" class="sidenav" type="text/html" data="menu.html" ></object>
+        <div id="mySidenav" class="sidenav">
+            <div class="closeButton fa fa-close" onclick="toggleNav()"></div>
+            <ul class="menuList">
+                <li>
+                    <div class="linkIcon"></div>
+                    <div class="menuLink">Link 1</div>
+                </li>
+                <li>
+                    <div class="linkIcon"></div>
+                    <div class="menuLink">Link 2</div>
+                </li>
+                <li>
+                    <div class="linkIcon"></div>
+                    <div class="menuLink">Link 3</div>
+                </li>
+                <li>
+                    <div class="linkIcon"></div>
+                    <div class="menuLink">Link 4</div>
+                </li>
+                <li>
+                    <div class="linkIcon"></div>
+                    <div class="menuLink">Link 5</div>
+                </li>
+            </ul>
+            <div class="bottomBar">
+                <div class="verticalSeperator" style="bottom: 68px"></div>
+                <div class="userIcon"></div>
+                <div class="userName">Username</div>
+                <div class="userType">User Type</div>
+                <div class="logoutButton fa fa-power-off">
+            </div>
+        </div>
+        </div>
         <div id="titleBar">
           <button class="navButton" id="navButton" onclick="toggleNav()">
             <div class="line"></div>

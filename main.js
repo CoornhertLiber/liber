@@ -255,7 +255,7 @@ window.onload = function() {
 
     document.onkeydown = function (e) {
         e = e || window.event;;
-        if (e.keyCode == 27 && navEnabled) { // Handles the ESC key
+        if ((e.keyCode == 27 && navEnabled) || e.keyCode == 77) { // Handles the ESC key
             toggleNav();
         }
     };
