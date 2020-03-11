@@ -1,35 +1,3 @@
-:root {
-    --color-body: white;
-    --color-bg: white;
-    --color-button: #cacbcd;
-    --color-button-hover: #999999;
-    --color-button-text: black;
-    --color-active: #2185d0;
-    --color-text: white;
-    --color-title-text: black;
-    --color-border: rgba(13, 13, 14, 0.15);
-    --color-shadow: #858593;
-    --color-todo-bg: #f2f3f5;
-    --color-todo-border: rgba(34,36,38,.15);
-    --color-scrollbar-color: #7e8182 #cecece;
-}
-
-[data-theme="dark"] {
-    --color-body: #181a1b;
-    --color-bg: #181a1b;
-    --color-button: #272a2b;
-    --color-button-hover: #3e4344;
-    --color-button-text: lightgray;
-    --color-active: #2185d0;
-    --color-text: white;
-    --color-title-text: white;
-    --color-border: #616168;
-    --color-shadow: #0D0E0E;
-    --color-todo-bg: rgb(28, 30, 31);
-    --color-todo-border: rgb(37, 40, 41);
-    --color-scrollbar-color: #2a2c2e #1c1e1f;
-}
-
 .sidenav {
     border-right: 5px solid white;
 }
@@ -52,30 +20,32 @@
     top: 50px;
     margin-right: auto;
     margin-left: auto;
+    padding: 0px;
     max-width: 100%;
     min-width: 25vw;
 }
 
 .linkIcon {
-    margin-top: 0.75em;
+    position: absolute;
+    left: 15px;
     width: 30px;
     height: 30px;
-    position: relative;
-    left: -130px;
-    background-color: var(--color-text);
     display: inline-block;
+
+    font-size: 2em !important;
+    text-align: center;
+    color: var(--color-text);
 
     cursor: pointer;
 }
 
 .menuLink {
     color: var(--color-text);
-    display: inline-block;
+    display: inline;
     font-size: 1.5em;
-    top: -0.25em;
-    left: -130px;
+    line-height: 1.25em;
     position: relative;
-    margin-left: 10px;
+    left: 70px;
 
     cursor: pointer;
     
@@ -138,4 +108,10 @@
     top: 5px;
     position: relative;
     cursor: pointer;
+}
+
+.menuList li {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 15px;
 }
