@@ -1,43 +1,4 @@
-body {
-    background-color: var(--color-body);
-    scrollbar-color: var(--color-scrollbar-color);
-    overflow-x: hidden;
-}
-
-.topContainer {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    top: 8vh;
-    position: absolute;
-}
-
-.testContainer {
-    float: left;
-    width: 31vw;
-    height: 90vh;
-
-    margin-right: .5vw;
-    margin-left: .5vw;
-    background-color: var(--color-bg);
-    border-radius: 1em;
-
-    box-shadow: 0 4px 8px 0 var(--color-shadow);
-    border: 2px solid var(--color-border);
-
-    overflow-y: auto;
-}
-
-.testList {
-    list-style-type: none;
-    padding: 0px;
-}
-
-.empty {
-    display: none;
-}
-
-.occupied {
+.visItem {
     display: block;
     background-color: var(--color-button);
     border: none;
@@ -61,69 +22,55 @@ body {
     text-decoration: none;
 
     outline-style: none;
-
     cursor: pointer;
 }
 
-.occupied:hover {
+.visItem:hover {
     background-color: var(--color-button-hover);
     transition: all .05s ease-in-out;
 }
 
-.active {
-    background-color: var(--color-active) !important;
-    color: var(--color-text);
-}
-
-.seperator {
-    float: left;
-    width: .3vw;
-    height: 90vh;
-    background-color: gray;
-    border-radius: 1em;
-}
-
-*::-moz-focus-inner {
-    outline: none;
-    border:none;
-}
-
-*::-moz-focus-outer {
-    outline: none;
-    border: none;
-}
-
-.todo {
-    background-color: var(--color-todo-bg);
-    color: var(--color-title-text);
-    border-radius: .5em;
-    border: 2px solid var(--color-todo-border);
-    height: 5vh;
-
-    float: left;
+.visContainer {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
     position: relative;
-    left: 1vw;
-    top: 1vh;
 
-    padding-left: .7vw;
-    padding-right: .7vw;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20%, 1fr));
 
-    line-height: 2.2em;
+    list-style: none;
 }
 
-.titleCard {
+.fa-star {
+    font-size: 1.5em !important;
+    top: 3px;
+    right: 20px;
     position: absolute;
-    text-align: center;
-    left: 40.5%;
-    top: 5px;
-    font-size: 2.5em;
-    color: var(--color-title-text);
+    display: inline;
+    color: goldenrod;
+}
+
+.fa-star-o {
+    font-size: 1.5em !important;
+    top: 3px;
+    right: 20px;
+    position: absolute;
+    display: inline;
+    color: gray;
+}
+
+.visText {
+    left: 10% !important;
+    position: absolute;
+    display: inline;
 }
 
 .switch {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 4px;
+    right: 60px;
     width: 50px;
     height: 24px;
     float: right;

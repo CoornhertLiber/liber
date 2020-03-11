@@ -181,7 +181,6 @@ function highlightSelected() {
     }
 }
 
-
 function onLoad() {
 
     classNames = ["domain", "subject", "module"]
