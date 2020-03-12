@@ -189,6 +189,10 @@ window.onload = function() {
         }
     }
 
+    if (userSettings == undefined) {
+        userSettings = {}
+    }
+
     var domains = [];
     for (item in data) {
         domains.push(item);
