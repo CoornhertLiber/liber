@@ -12,6 +12,7 @@
     --color-todo-bg: #f2f3f5;
     --color-todo-border: rgba(34,36,38,.15);
     --color-scrollbar-color: #7e8182 #cecece;
+    --color-vis-fg: #1F1F1F;
 }
 
 [data-theme="dark"] {
@@ -28,4 +29,5 @@
     --color-todo-bg: rgb(28, 30, 31);
     --color-todo-border: rgb(37, 40, 41);
     --color-scrollbar-color: #2a2c2e #1c1e1f;
+    --color-vis-fg: #E0E0E0;
 }
