@@ -1,16 +1,16 @@
 function print(args) { console.log(args) }
 
-domains = {}
+settings = {}
 
 
-function save(isDark) {
-    localStorage.setItem("RetroLiber", isDark);
+function save(item) {
+    localStorage.setItem("RetroLiberUser", JSON.stringify(item));
 }
 function onLoad() {
    
-    var domains = localStorage.getItem("RetroLiberUser");
-    if (domains == undefined) {
-        domains = {}
+    settings = JSON.parse(localStorage.getItem("RetroLiberUser"));
+    if (settings == undefined) {
+        settings = {}
     }
 
     // Add the listener for the theme switch
@@ -27,20 +27,48 @@ function onLoad() {
         obj.classList += "visItem";
 
         text = document.createElement("div");
-        if (data[item]["displayName"] == undefined) { text.innerHtml = data[item] }
-        else { text.innerText = data[item]["displayName"]; }
+        if (data[item]["displayName"] == undefined) { 
+            text.innerHtml = data[item];
+        }
+        else { 
+            text.innerText = data[item]["displayName"];
+            text.setAttribute("realName", item);
+        }
         text.classList += "visText";
 
         icon = document.createElement("div");
-        icon.classList += "fa fa-star-o";
+        iconBox = document.createElement("input");
+        iconBox.type = "checkbox";
+        iconBox.classList += "visStarBox";
+
+        if (settings[item] != undefined) {
+            icon.classList = settings[item]["starred"] ? "fa fa-star" : "fa fa-star-o";
+            iconBox.checked = settings[item]["starred"];
+        }
+        else {
+            icon.classList = "fa fa-star-o";
+        }
+
+        iconBox.addEventListener("change", starPressed);
+
         obj.appendChild(icon);
+        obj.appendChild(iconBox);
 
         label = document.createElement("label");
-        label.classList += "switch";
+        label.classList += "visSwitch";
         input = document.createElement("input");
         input.type = "checkbox";
+        if (settings[item] != undefined) {
+            input.checked = !settings[item]["hidden"];
+        }
+        else {
+            input.checked = true;
+        }
+        input.addEventListener("change", switchPressed); 
+
+
         span = document.createElement("span");
-        span.classList += "slider"
+        span.classList += "visSlider";
         
         label.appendChild(input);
         label.appendChild(span);
@@ -53,6 +81,31 @@ function onLoad() {
 
     document.body.appendChild(mainContainer);
 
+}
+
+function switchPressed() {
+    domain = this.parentNode.parentNode.childNodes[1];
+    if (domain.getAttribute("realName") == undefined) { name = domain.innerText; }
+    else { name = domain.getAttribute("realName"); }
+    if (settings[name] == undefined) {
+        settings[name] = {};
+    }
+    settings[name]["hidden"] = !this.checked;
+    save(settings);
+}
+
+function starPressed() {
+    domain = this.parentNode.childNodes[2];
+    if (domain.getAttribute("realName") == undefined) { name = domain.innerText; }
+    else { name = domain.getAttribute("realName"); }
+    if (settings[name] == undefined) {
+        settings[name] = {};
+    }
+    settings[name]["starred"] = this.checked;
+    save(settings);
+
+    icon = this.parentNode.childNodes[0];
+    icon.classList = this.checked ? "fa fa-star" : "fa fa-star-o";
 }
 
 if(window.addEventListener){
