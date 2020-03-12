@@ -3,9 +3,10 @@ function print(args) { console.log(args) }
 settings = {}
 
 
-function save(item) {
+function saveSettings(item) {
     localStorage.setItem("RetroLiberUser", JSON.stringify(item));
 }
+
 function onLoad() {
    
     settings = JSON.parse(localStorage.getItem("RetroLiberUser"));
@@ -84,14 +85,14 @@ function onLoad() {
 }
 
 function switchPressed() {
-    domain = this.parentNode.parentNode.childNodes[1];
+    domain = this.parentNode.parentNode.childNodes[2];
     if (domain.getAttribute("realName") == undefined) { name = domain.innerText; }
     else { name = domain.getAttribute("realName"); }
     if (settings[name] == undefined) {
         settings[name] = {};
     }
     settings[name]["hidden"] = !this.checked;
-    save(settings);
+    saveSettings(settings);
 }
 
 function starPressed() {
@@ -100,9 +101,9 @@ function starPressed() {
     else { name = domain.getAttribute("realName"); }
     if (settings[name] == undefined) {
         settings[name] = {};
-    }
+    };
     settings[name]["starred"] = this.checked;
-    save(settings);
+    saveSettings(settings);
 
     icon = this.parentNode.childNodes[0];
     icon.classList = this.checked ? "fa fa-star" : "fa fa-star-o";

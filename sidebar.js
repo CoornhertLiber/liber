@@ -1,11 +1,9 @@
 sideBarLinks = {
-    "Testing123": {"page": "vis.html"},
+    "Home": {"page": "staging.html", "icon": "fa-home"},
     "Settings": {"page": "vis.html", "icon": "fa-gear"}
 };
 
 navEnabled = false;
-
-function print(e) {console.log(e);}
 
 function toggleNav() {
     navEnabled = !navEnabled;
@@ -13,7 +11,7 @@ function toggleNav() {
     else { document.getElementById("mySidenav").style.width = "0%"; }
 }
 
-function onLoad() {
+function onLoadSidebar() {
 
     document.onkeydown = function (e) {
         e = e || window.event;;
@@ -26,11 +24,12 @@ function onLoad() {
     for (item in sideBarLinks) {
         li = document.createElement("li");
 
-        divIcon = document.createElement("div");
+        divIcon = document.createElement("div");;
         icon = sideBarLinks[item]["icon"];
         if (icon == undefined) { icon = "fa-question" }
         divIcon.classList = "linkIcon fa " + icon;
-        divLink = document.createElement("div");
+        divLink = document.createElement("a");
+        divLink.href = sideBarLinks[item]["page"];
         divLink.classList = "menuLink";
         divLink.innerText = item;
 
@@ -44,7 +43,7 @@ function onLoad() {
 }
 
 if(window.addEventListener){
-    window.addEventListener('load',onLoad,false);
+    window.addEventListener('load',onLoadSidebar,false);
 }else{
-    window.attachEvent('onload',onLoad);
+    window.attachEvent('onload',onLoadSidebar);
 }

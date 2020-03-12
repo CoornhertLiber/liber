@@ -40,10 +40,9 @@
 }
 
 .menuLink {
-    color: var(--color-text);
     display: inline;
     font-size: 1.5em;
-    line-height: 1.25em;
+    line-height: .75em;
     position: relative;
     left: 70px;
 
@@ -52,6 +51,10 @@
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+}
+
+.menuLink:hover {
+    color: var(--color-text) !important;
 }
 
 .userIcon {

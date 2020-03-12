@@ -1,7 +1,3 @@
-function save(isDark) {
-    localStorage.setItem("RetroLiber", isDark);
-}
-
 function setTheme(isDark) {
     isDark = (isDark == "true");
     document.getElementById('themeSwitch').checked = isDark;
@@ -19,10 +15,15 @@ function onLoad() {
 
     // Add the listener for the theme switch
     document.getElementById('themeSwitch').addEventListener('change', function(event){
-        (event.target.checked) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
-        save(event.target.checked);
+        saveTheme(event.target.checked);
     });
 
+}
+
+function saveTheme(isDark) {
+    isDark ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme')
+    console.log("test");
+    localStorage.setItem("RetroLiber", isDark);
 }
 
 if(window.addEventListener){

@@ -69,7 +69,8 @@ let sep3 = document.createElement("div");
 
 let navEnabled = false;
 
-print("Get out of my console!");
+userSettings = {};
+starred = [];
 
 function changeDomain(domain) {
     // First we loop over all the subjects in this domain
@@ -181,7 +182,9 @@ function highlightSelected() {
     }
 }
 
-function onLoad() {
+function onLoadMain() {
+
+    userSettings = JSON.parse(localStorage.getItem("RetroLiberUser"));
 
     classNames = ["domain", "subject", "module"]
     // Create the divs that will be filled later
@@ -202,9 +205,21 @@ function onLoad() {
     }
 
     var domains = [];
+    var starred = [];
     for (item in data) {
-        domains.push(item);
+        if (userSettings[item] != undefined) {
+            if (userSettings[item]["hidden"] == false || userSettings[item]["hidden"] == undefined) {
+                if (userSettings[item]["starred"]) { starred.push(item) }
+                else {domains.push(item);}
+            }
+        }
+        else {
+            domains.push(item);
+        }
     }
+    print(starred);
+    domains = starred.concat(domains);
+    print(domains);
 
     var domainLength = domains.length;
     for (var x = 0 ; x < domainList.childNodes.length; x++) {
@@ -217,18 +232,20 @@ function onLoad() {
                 domainList.childNodes[x].innerText = domains[x];
                 domainList.childNodes[x].setAttribute("realName", "");
             }
-            domainList.childNodes[x].classList = "occupied";
+            if (userSettings[domains[x]] == undefined) {
+                domainList.childNodes[x].classList = "hidden";
+            }
+            else {
+                print(domains[x]);
+                domainList.childNodes[x].classList = userSettings[domains[x]]["hidden"] ? "hidden" : "hidden";
+            }
         }
         else {
             domainList.childNodes[x].innerText = "";
             domainList.childNodes[x].classList = "empty";
         }
     }
-
-    for (domain in data) {
-        this.changeDomain(domain);
-        break;
-    }
+    this.changeDomain(domains[0]);
 
     domDataContainer = document.getElementById("dataContainer");
     domDataContainer.appendChild(topContainer);
@@ -262,7 +279,7 @@ function test() {
 
 
 if(window.addEventListener){
-    window.addEventListener('load',onLoad,false);
+    window.addEventListener('load',onLoadMain,false);
 }else{
-    window.attachEvent('onload',onLoad);
+    window.attachEvent('onload',onLoadMain);
 }
