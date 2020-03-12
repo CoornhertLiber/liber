@@ -1,35 +1,3 @@
-:root {
-    --color-body: white;
-    --color-bg: white;
-    --color-button: #cacbcd;
-    --color-button-hover: #999999;
-    --color-button-text: black;
-    --color-active: #2185d0;
-    --color-text: white;
-    --color-title-text: black;
-    --color-border: rgba(13, 13, 14, 0.15);
-    --color-shadow: #858593;
-    --color-todo-bg: #f2f3f5;
-    --color-todo-border: rgba(34,36,38,.15);
-    --color-scrollbar-color: #7e8182 #cecece;
-}
-
-[data-theme="dark"] {
-    --color-body: #181a1b;
-    --color-bg: #181a1b;
-    --color-button: #272a2b;
-    --color-button-hover: #3e4344;
-    --color-button-text: lightgray;
-    --color-active: #2185d0;
-    --color-text: white;
-    --color-title-text: white;
-    --color-border: #616168;
-    --color-shadow: #0D0E0E;
-    --color-todo-bg: rgb(28, 30, 31);
-    --color-todo-border: rgb(37, 40, 41);
-    --color-scrollbar-color: #2a2c2e #1c1e1f;
-}
-
 body {
     background-color: var(--color-body);
     scrollbar-color: var(--color-scrollbar-color);
@@ -74,6 +42,34 @@ body {
     background-color: var(--color-button);
     border: none;
     color: var(--color-button-text);
+    
+    border-radius: .5em;
+    margin-top: 1vh;
+
+    height: 4.6vh;
+    width: 90%;
+    left: 5%;
+    position: relative;
+
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+
+    outline-style: none;
+
+    cursor: pointer;
+}
+
+.hidden {
+    display: block;
+    background-color: darkgreen !important;
+    border: none;
+    color: black;
     
     border-radius: .5em;
     margin-top: 1vh;
@@ -146,7 +142,7 @@ body {
 .titleCard {
     position: absolute;
     text-align: center;
-    width: 93%;
+    left: 40.5%;
     top: 5px;
     font-size: 2.5em;
     color: var(--color-title-text);
@@ -209,45 +205,4 @@ input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-}
-  
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    text-align:center;
-}
-  
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  
-}
-  
-.sidenav a:hover{
-    color: #f1f1f1;
-}
-  
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-  
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
 }

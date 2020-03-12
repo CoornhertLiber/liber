@@ -1,0 +1,143 @@
+.visItem {
+    display: block;
+    background-color: var(--color-button);
+    border: none;
+    color: var(--color-button-text);
+    
+    border-radius: .5em;
+    margin-top: 1vh;
+
+    height: 32px;
+    width: 90%;
+    left: 5%;
+    position: relative;
+
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+
+    outline-style: none;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.visItem:hover {
+    background-color: var(--color-button-hover);
+    transition: all .05s ease-in-out;
+}
+
+.visContainer {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20%, 1fr));
+
+    list-style: none;
+}
+
+.fa-star {
+    font-size: 1.5em !important;
+    top: 3px;
+    right: 20px;
+    position: absolute;
+    display: inline;
+    color: goldenrod;
+}
+
+.fa-star-o {
+    font-size: 1.5em !important;
+    top: 3px;
+    right: 20px;
+    position: absolute;
+    display: inline;
+    color: gray;
+}
+
+.visText {
+    left: 10% !important;
+    position: absolute;
+    display: inline;
+}
+
+.visSwitch {
+    position: absolute;
+    top: 4px;
+    right: 60px;
+    width: 50px;
+    height: 24px;
+}
+
+.visSwitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.visSlider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 34px;
+    display: inline;
+
+    overflow-x: auto;
+}
+
+.visSlider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 50%;
+    display: inline;
+}
+
+input:checked + .visSlider {
+    background-color: #2196F3;
+}
+
+input:focus + .visSlider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .visSlider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.visStarBox {
+    z-index: 99;
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    position: absolute;
+    top: 1px;
+    right: 18px;
+    
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+}

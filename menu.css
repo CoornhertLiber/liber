@@ -1,0 +1,186 @@
+.sidenav {
+    border-right: 5px solid white;
+}
+
+.bottomBar {
+    color: var(--color-text);
+    position: absolute;
+    width: 99%;
+    height: 10%;
+    bottom: 0%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    min-width: 200px;
+}
+
+.menuList {
+    list-style: none;
+    position: relative;
+    top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    max-width: 100%;
+    min-width: 25vw;
+}
+
+.linkIcon {
+    position: absolute;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+
+    font-size: 2em !important;
+    text-align: center;
+    color: var(--color-text);
+
+    cursor: pointer;
+}
+
+.menuLink {
+    display: inline;
+    font-size: 1.5em;
+    line-height: .75em;
+    position: relative;
+    left: 70px;
+
+    cursor: pointer;
+    
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.menuLink:hover {
+    color: var(--color-text) !important;
+}
+
+.userIcon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-text);
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+    border-radius: 50%;
+}
+
+.userName {
+    display: inline;
+    top: 7px;
+    left: 70px;
+    font-size: 1.5em;
+    position: absolute;
+}
+
+.userType {
+    display: inline;
+    bottom: 12px;
+    left: 70px;
+    font-size: 1em;
+    position: absolute;
+}
+
+
+.logoutButton {
+    font-size: 2.5em !important;
+    color: var(--color-text);
+    position: absolute;
+    left: 295px;
+    bottom: 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.verticalSeperator {
+    height: 3px;
+    left: 5px;
+    right: 5px;
+    border-radius: 15px;
+    background-color: var(--color-text);
+    position: absolute;
+}
+
+.closeButton {
+    color: var(--color-text);
+    font-size: 2.5em !important;
+    margin-left: 275px;
+    top: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menuList li {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+  
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align:center;
+    z-index: 100;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  
+}
+  
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.closebtn {
+    cursor: pointer;
+}
+
+.navButton {
+    font-size:20px;
+    cursor:pointer;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-bg);
+    border: none;
+    margin-left: 5px;
+}
+
+.line {
+    background-color: var(--color-title-text);
+    height: 5px;
+    width: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.navBg {
+    background-color: none;
+    width: 30px;
+    height: 30px;
+    margin-top: -30px;
+}
