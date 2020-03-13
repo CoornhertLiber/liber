@@ -2,6 +2,7 @@ body {
     background-color: var(--color-body);
     scrollbar-color: var(--color-scrollbar-color);
     overflow-x: hidden;
+    font-family: Verdana, Geneva, Sans-Serif;
 }
 
 .topContainer {
@@ -51,7 +52,6 @@ body {
     left: 5%;
     position: relative;
 
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
     font-size: 1.2em;
     line-height: 1.7em;
     text-overflow: ellipsis;
@@ -61,6 +61,8 @@ body {
     text-decoration: none;
 
     outline-style: none;
+
+    font-family: Verdana, Geneva, Sans-Serif;
 
     cursor: pointer;
 }

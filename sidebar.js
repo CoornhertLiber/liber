@@ -1,5 +1,5 @@
 sideBarLinks = {
-    "Home": {"page": "staging.html", "icon": "fa-home"},
+    "Home": {"page": "index.html", "icon": "fa-home"},
     "Settings": {"page": "vis.html", "icon": "fa-gear"}
 };
 
