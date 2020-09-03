@@ -70,6 +70,8 @@ for domainName in domains:
                     #print(pathSplit)
                     allData[domain][pathSplit[0]][pathSplit[1]] = displayName
                 except KeyError:
+                    if domain == "Nederlands":
+                        domain = "NederlandsOB"
                     allData[domain][pathSplit[0]] = {}
                     allData[domain][pathSplit[0]][pathSplit[1]] = displayName
 
