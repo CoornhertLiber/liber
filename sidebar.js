@@ -1,5 +1,6 @@
 sideBarLinks = {
     "Home": {"page": "index.html", "icon": "fa-home"},
+    "Studiewijzers": {"page": "studiewijzers.html", "icon": "fa-list-ol"},
     "Settings": {"page": "vis.html", "icon": "fa-gear"}
 };
 
@@ -37,8 +38,6 @@ function onLoadSidebar() {
         li.appendChild(divLink);
         
         list.appendChild(li);
-
-    toggleNav(true);
     }
 }
 
