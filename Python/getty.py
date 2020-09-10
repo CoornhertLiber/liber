@@ -24,6 +24,7 @@ for subject in subjects:
     if subject in special_cases:
         reqSubject = special_cases[subject]
     #reqSubject += " studiewijzer"
+    print(reqSubject)
     response = requests.get(domain + endpoint + query + reqSubject, headers={"Authorization": f"bearer {secret}"})
     #print(response.text)
     with open("data/" + subject, "w+") as f:
