@@ -42,11 +42,13 @@ for domainName in domains:
 
             if "NederlandsOB" in path:
                 domain = "NederlandsOB"
-            if "Biologie" in path:
+            elif "Biologie" in path:
                 if "BiologieOB" in path:
                     domain = "BiologieOB"
                 else:
                     domain = "Biologie"
+            elif "KCV" in path:
+                domain = "KCV"
             
             if domainName == "WiskundeAC":
                 if "WiskundeOnderbouw" in item:
@@ -65,6 +67,7 @@ for domainName in domains:
                     allData[domain][path] = {"displayName": displayName.replace(domain + "/", "")}
             
             elif dataType == "module":
+                print(path, len(domain), domain)
                 pathSplit = path[len(domain) + 1:].split("/")
                 try:
                     #print(pathSplit)
